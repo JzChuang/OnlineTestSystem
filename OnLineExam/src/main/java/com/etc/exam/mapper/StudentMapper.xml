@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etc.exam.dao.StudentMapper">
+  <resultMap id="BaseResultMap" type="com.etc.exam.entity.Student">
+    <id column="STUNAME" jdbcType="VARCHAR" property="STUNAME" />
+    <result column="NICKNAME" jdbcType="VARCHAR" property="NICKNAME" />
+    <result column="REALNAME" jdbcType="VARCHAR" property="REALNAME" />
+    <result column="SEX" jdbcType="VARCHAR" property="SEX" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="EMAIL" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    STUNAME, NICKNAME, REALNAME, SEX, EMAIL
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_STUDENTINFO
+    where STUNAME = #{STUNAME,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from T_STUDENTINFO
+    where STUNAME = #{STUNAME,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.etc.exam.entity.Student">
+    insert into T_STUDENTINFO (STUNAME, NICKNAME, REALNAME, 
+      SEX, EMAIL)
+    values (#{STUNAME,jdbcType=VARCHAR}, #{NICKNAME,jdbcType=VARCHAR}, #{REALNAME,jdbcType=VARCHAR}, 
+      #{SEX,jdbcType=VARCHAR}, #{EMAIL,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.etc.exam.entity.Student">
+    insert into T_STUDENTINFO
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="STUNAME != null">
+        STUNAME,
+      </if>
+      <if test="NICKNAME != null">
+        NICKNAME,
+      </if>
+      <if test="REALNAME != null">
+        REALNAME,
+      </if>
+      <if test="SEX != null">
+        SEX,
+      </if>
+      <if test="EMAIL != null">
+        EMAIL,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="STUNAME != null">
+        #{STUNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="NICKNAME != null">
+        #{NICKNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="REALNAME != null">
+        #{REALNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="SEX != null">
+        #{SEX,jdbcType=VARCHAR},
+      </if>
+      <if test="EMAIL != null">
+        #{EMAIL,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.etc.exam.entity.Student">
+    update T_STUDENTINFO
+    <set>
+      <if test="NICKNAME != null">
+        NICKNAME = #{NICKNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="REALNAME != null">
+        REALNAME = #{REALNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="SEX != null">
+        SEX = #{SEX,jdbcType=VARCHAR},
+      </if>
+      <if test="EMAIL != null">
+        EMAIL = #{EMAIL,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where STUNAME = #{STUNAME,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.etc.exam.entity.Student">
+    update T_STUDENTINFO
+    set NICKNAME = #{NICKNAME,jdbcType=VARCHAR},
+      REALNAME = #{REALNAME,jdbcType=VARCHAR},
+      SEX = #{SEX,jdbcType=VARCHAR},
+      EMAIL = #{EMAIL,jdbcType=VARCHAR}
+    where STUNAME = #{STUNAME,jdbcType=VARCHAR}
+  </update>
+</mapper>

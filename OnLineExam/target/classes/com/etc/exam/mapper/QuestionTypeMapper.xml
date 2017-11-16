@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etc.exam.dao.QuestionTypeMapper">
+  <resultMap id="BaseResultMap" type="com.etc.exam.entity.QuestionType">
+    <id column="QTYPEID" jdbcType="DECIMAL" property="QTYPEID" />
+    <result column="QTYPENAME" jdbcType="VARCHAR" property="QTYPENAME" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    QTYPEID, QTYPENAME
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_QUESTIONTYPE
+    where QTYPEID = #{QTYPEID,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from T_QUESTIONTYPE
+    where QTYPEID = #{QTYPEID,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.etc.exam.entity.QuestionType">
+    insert into T_QUESTIONTYPE (QTYPEID, QTYPENAME)
+    values (#{QTYPEID,jdbcType=DECIMAL}, #{QTYPENAME,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.etc.exam.entity.QuestionType">
+    insert into T_QUESTIONTYPE
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="QTYPEID != null">
+        QTYPEID,
+      </if>
+      <if test="QTYPENAME != null">
+        QTYPENAME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="QTYPEID != null">
+        #{QTYPEID,jdbcType=DECIMAL},
+      </if>
+      <if test="QTYPENAME != null">
+        #{QTYPENAME,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.etc.exam.entity.QuestionType">
+    update T_QUESTIONTYPE
+    <set>
+      <if test="QTYPENAME != null">
+        QTYPENAME = #{QTYPENAME,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where QTYPEID = #{QTYPEID,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.etc.exam.entity.QuestionType">
+    update T_QUESTIONTYPE
+    set QTYPENAME = #{QTYPENAME,jdbcType=VARCHAR}
+    where QTYPEID = #{QTYPEID,jdbcType=DECIMAL}
+  </update>
+</mapper>

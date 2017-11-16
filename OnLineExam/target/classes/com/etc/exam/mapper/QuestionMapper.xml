@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etc.exam.dao.QuestionMapper">
+  <resultMap id="BaseResultMap" type="com.etc.exam.entity.Question">
+    <id column="QUESTIONID" jdbcType="DECIMAL" property="QUESTIONID" />
+    <result column="QTYPEID" jdbcType="DECIMAL" property="QTYPEID" />
+    <result column="SUBJECTID" jdbcType="DECIMAL" property="SUBJECTID" />
+    <result column="QUESTIONTITLE" jdbcType="VARCHAR" property="QUESTIONTITLE" />
+    <result column="ANSWER" jdbcType="VARCHAR" property="ANSWER" />
+    <result column="EXPLAIN" jdbcType="VARCHAR" property="EXPLAIN" />
+    <result column="QOPTION" jdbcType="VARCHAR" property="QOPTION" />
+    <result column="SCORE" jdbcType="DECIMAL" property="SCORE" />
+    <result column="TITLEIMG" jdbcType="VARCHAR" property="TITLEIMG" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    QUESTIONID, QTYPEID, SUBJECTID, QUESTIONTITLE, ANSWER, EXPLAIN, QOPTION, SCORE, TITLEIMG
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_QUESTION
+    where QUESTIONID = #{QUESTIONID,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from T_QUESTION
+    where QUESTIONID = #{QUESTIONID,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.etc.exam.entity.Question">
+    insert into T_QUESTION (QUESTIONID, QTYPEID, SUBJECTID, 
+      QUESTIONTITLE, ANSWER, EXPLAIN, 
+      QOPTION, SCORE, TITLEIMG
+      )
+    values (#{QUESTIONID,jdbcType=DECIMAL}, #{QTYPEID,jdbcType=DECIMAL}, #{SUBJECTID,jdbcType=DECIMAL}, 
+      #{QUESTIONTITLE,jdbcType=VARCHAR}, #{ANSWER,jdbcType=VARCHAR}, #{EXPLAIN,jdbcType=VARCHAR}, 
+      #{QOPTION,jdbcType=VARCHAR}, #{SCORE,jdbcType=DECIMAL}, #{TITLEIMG,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.etc.exam.entity.Question">
+    insert into T_QUESTION
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="QUESTIONID != null">
+        QUESTIONID,
+      </if>
+      <if test="QTYPEID != null">
+        QTYPEID,
+      </if>
+      <if test="SUBJECTID != null">
+        SUBJECTID,
+      </if>
+      <if test="QUESTIONTITLE != null">
+        QUESTIONTITLE,
+      </if>
+      <if test="ANSWER != null">
+        ANSWER,
+      </if>
+      <if test="EXPLAIN != null">
+        EXPLAIN,
+      </if>
+      <if test="QOPTION != null">
+        QOPTION,
+      </if>
+      <if test="SCORE != null">
+        SCORE,
+      </if>
+      <if test="TITLEIMG != null">
+        TITLEIMG,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="QUESTIONID != null">
+        #{QUESTIONID,jdbcType=DECIMAL},
+      </if>
+      <if test="QTYPEID != null">
+        #{QTYPEID,jdbcType=DECIMAL},
+      </if>
+      <if test="SUBJECTID != null">
+        #{SUBJECTID,jdbcType=DECIMAL},
+      </if>
+      <if test="QUESTIONTITLE != null">
+        #{QUESTIONTITLE,jdbcType=VARCHAR},
+      </if>
+      <if test="ANSWER != null">
+        #{ANSWER,jdbcType=VARCHAR},
+      </if>
+      <if test="EXPLAIN != null">
+        #{EXPLAIN,jdbcType=VARCHAR},
+      </if>
+      <if test="QOPTION != null">
+        #{QOPTION,jdbcType=VARCHAR},
+      </if>
+      <if test="SCORE != null">
+        #{SCORE,jdbcType=DECIMAL},
+      </if>
+      <if test="TITLEIMG != null">
+        #{TITLEIMG,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.etc.exam.entity.Question">
+    update T_QUESTION
+    <set>
+      <if test="QTYPEID != null">
+        QTYPEID = #{QTYPEID,jdbcType=DECIMAL},
+      </if>
+      <if test="SUBJECTID != null">
+        SUBJECTID = #{SUBJECTID,jdbcType=DECIMAL},
+      </if>
+      <if test="QUESTIONTITLE != null">
+        QUESTIONTITLE = #{QUESTIONTITLE,jdbcType=VARCHAR},
+      </if>
+      <if test="ANSWER != null">
+        ANSWER = #{ANSWER,jdbcType=VARCHAR},
+      </if>
+      <if test="EXPLAIN != null">
+        EXPLAIN = #{EXPLAIN,jdbcType=VARCHAR},
+      </if>
+      <if test="QOPTION != null">
+        QOPTION = #{QOPTION,jdbcType=VARCHAR},
+      </if>
+      <if test="SCORE != null">
+        SCORE = #{SCORE,jdbcType=DECIMAL},
+      </if>
+      <if test="TITLEIMG != null">
+        TITLEIMG = #{TITLEIMG,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where QUESTIONID = #{QUESTIONID,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.etc.exam.entity.Question">
+    update T_QUESTION
+    set QTYPEID = #{QTYPEID,jdbcType=DECIMAL},
+      SUBJECTID = #{SUBJECTID,jdbcType=DECIMAL},
+      QUESTIONTITLE = #{QUESTIONTITLE,jdbcType=VARCHAR},
+      ANSWER = #{ANSWER,jdbcType=VARCHAR},
+      EXPLAIN = #{EXPLAIN,jdbcType=VARCHAR},
+      QOPTION = #{QOPTION,jdbcType=VARCHAR},
+      SCORE = #{SCORE,jdbcType=DECIMAL},
+      TITLEIMG = #{TITLEIMG,jdbcType=VARCHAR}
+    where QUESTIONID = #{QUESTIONID,jdbcType=DECIMAL}
+  </update>
+</mapper>

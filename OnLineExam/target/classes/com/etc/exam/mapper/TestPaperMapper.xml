@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etc.exam.dao.TestPaperMapper">
+  <resultMap id="BaseResultMap" type="com.etc.exam.entity.TestPaper">
+    <id column="TESTPAPERID" jdbcType="DECIMAL" property="TESTPAPERID" />
+    <result column="EXAMTYPEID" jdbcType="DECIMAL" property="EXAMTYPEID" />
+    <result column="TESTPAPERNAME" jdbcType="VARCHAR" property="TESTPAPERNAME" />
+    <result column="TESTPAPERTYPE" jdbcType="VARCHAR" property="TESTPAPERTYPE" />
+    <result column="PAPERFINISH" jdbcType="VARCHAR" property="PAPERFINISH" />
+    <result column="CREATETIME" jdbcType="VARCHAR" property="CREATETIME" />
+    <result column="CREATEMAN" jdbcType="VARCHAR" property="CREATEMAN" />
+    <result column="TIME" jdbcType="DECIMAL" property="TIME" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    TESTPAPERID, EXAMTYPEID, TESTPAPERNAME, TESTPAPERTYPE, PAPERFINISH, CREATETIME, CREATEMAN, 
+    TIME
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_TESTPAPER
+    where TESTPAPERID = #{TESTPAPERID,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from T_TESTPAPER
+    where TESTPAPERID = #{TESTPAPERID,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.etc.exam.entity.TestPaper">
+    insert into T_TESTPAPER (TESTPAPERID, EXAMTYPEID, TESTPAPERNAME, 
+      TESTPAPERTYPE, PAPERFINISH, CREATETIME, 
+      CREATEMAN, TIME)
+    values (#{TESTPAPERID,jdbcType=DECIMAL}, #{EXAMTYPEID,jdbcType=DECIMAL}, #{TESTPAPERNAME,jdbcType=VARCHAR}, 
+      #{TESTPAPERTYPE,jdbcType=VARCHAR}, #{PAPERFINISH,jdbcType=VARCHAR}, #{CREATETIME,jdbcType=VARCHAR}, 
+      #{CREATEMAN,jdbcType=VARCHAR}, #{TIME,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.etc.exam.entity.TestPaper">
+    insert into T_TESTPAPER
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="TESTPAPERID != null">
+        TESTPAPERID,
+      </if>
+      <if test="EXAMTYPEID != null">
+        EXAMTYPEID,
+      </if>
+      <if test="TESTPAPERNAME != null">
+        TESTPAPERNAME,
+      </if>
+      <if test="TESTPAPERTYPE != null">
+        TESTPAPERTYPE,
+      </if>
+      <if test="PAPERFINISH != null">
+        PAPERFINISH,
+      </if>
+      <if test="CREATETIME != null">
+        CREATETIME,
+      </if>
+      <if test="CREATEMAN != null">
+        CREATEMAN,
+      </if>
+      <if test="TIME != null">
+        TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="TESTPAPERID != null">
+        #{TESTPAPERID,jdbcType=DECIMAL},
+      </if>
+      <if test="EXAMTYPEID != null">
+        #{EXAMTYPEID,jdbcType=DECIMAL},
+      </if>
+      <if test="TESTPAPERNAME != null">
+        #{TESTPAPERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="TESTPAPERTYPE != null">
+        #{TESTPAPERTYPE,jdbcType=VARCHAR},
+      </if>
+      <if test="PAPERFINISH != null">
+        #{PAPERFINISH,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATETIME != null">
+        #{CREATETIME,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATEMAN != null">
+        #{CREATEMAN,jdbcType=VARCHAR},
+      </if>
+      <if test="TIME != null">
+        #{TIME,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.etc.exam.entity.TestPaper">
+    update T_TESTPAPER
+    <set>
+      <if test="EXAMTYPEID != null">
+        EXAMTYPEID = #{EXAMTYPEID,jdbcType=DECIMAL},
+      </if>
+      <if test="TESTPAPERNAME != null">
+        TESTPAPERNAME = #{TESTPAPERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="TESTPAPERTYPE != null">
+        TESTPAPERTYPE = #{TESTPAPERTYPE,jdbcType=VARCHAR},
+      </if>
+      <if test="PAPERFINISH != null">
+        PAPERFINISH = #{PAPERFINISH,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATETIME != null">
+        CREATETIME = #{CREATETIME,jdbcType=VARCHAR},
+      </if>
+      <if test="CREATEMAN != null">
+        CREATEMAN = #{CREATEMAN,jdbcType=VARCHAR},
+      </if>
+      <if test="TIME != null">
+        TIME = #{TIME,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where TESTPAPERID = #{TESTPAPERID,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.etc.exam.entity.TestPaper">
+    update T_TESTPAPER
+    set EXAMTYPEID = #{EXAMTYPEID,jdbcType=DECIMAL},
+      TESTPAPERNAME = #{TESTPAPERNAME,jdbcType=VARCHAR},
+      TESTPAPERTYPE = #{TESTPAPERTYPE,jdbcType=VARCHAR},
+      PAPERFINISH = #{PAPERFINISH,jdbcType=VARCHAR},
+      CREATETIME = #{CREATETIME,jdbcType=VARCHAR},
+      CREATEMAN = #{CREATEMAN,jdbcType=VARCHAR},
+      TIME = #{TIME,jdbcType=DECIMAL}
+    where TESTPAPERID = #{TESTPAPERID,jdbcType=DECIMAL}
+  </update>
+</mapper>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etc.exam.dao.ExamTypeMapper">
+  <resultMap id="BaseResultMap" type="com.etc.exam.entity.ExamType">
+    <id column="EXAMTYPEID" jdbcType="DECIMAL" property="EXAMTYPEID" />
+    <result column="EXAMTYPENAME" jdbcType="VARCHAR" property="EXAMTYPENAME" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    EXAMTYPEID, EXAMTYPENAME
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_EXAMTYPE
+    where EXAMTYPEID = #{EXAMTYPEID,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from T_EXAMTYPE
+    where EXAMTYPEID = #{EXAMTYPEID,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.etc.exam.entity.ExamType">
+    insert into T_EXAMTYPE (EXAMTYPEID, EXAMTYPENAME)
+    values (#{EXAMTYPEID}, #{EXAMTYPENAME})
+  </insert>
+  <insert id="insertSelective" parameterType="com.etc.exam.entity.ExamType">
+    insert into T_EXAMTYPE
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="EXAMTYPEID != null">
+        EXAMTYPEID,
+      </if>
+      <if test="EXAMTYPENAME != null">
+        EXAMTYPENAME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="EXAMTYPEID != null">
+        #{EXAMTYPEID,jdbcType=DECIMAL},
+      </if>
+      <if test="EXAMTYPENAME != null">
+        #{EXAMTYPENAME,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.etc.exam.entity.ExamType">
+    update T_EXAMTYPE
+    <set>
+      <if test="EXAMTYPENAME != null">
+        EXAMTYPENAME = #{EXAMTYPENAME,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where EXAMTYPEID = #{EXAMTYPEID,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.etc.exam.entity.ExamType">
+    update T_EXAMTYPE
+    set EXAMTYPENAME = #{EXAMTYPENAME,jdbcType=VARCHAR}
+    where EXAMTYPEID = #{EXAMTYPEID,jdbcType=DECIMAL}
+  </update>
+</mapper>
