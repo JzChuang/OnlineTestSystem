@@ -10,9 +10,27 @@
        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 
+
+	<context:annotation-config></context:annotation-config>
+
+	<!-- 设置静态资源不被过滤 静态资源可以正常访问,但是我们的控制器 RequestMapping无法访问 -->
+	<!-- <mvc:resources location="/" mapping="/*.*"></mvc:resources>
+	<mvc:resources location="/src/main/webapp/images/" mapping="images/*.gif"></mvc:resources>
+	<mvc:resources location="/src/main/webapp/css/" mapping="css/*.css"></mvc:resources>
+	<mvc:resources location="/src/main/webapp/bootstrap/js/" mapping="bootstrap/js/*.js"></mvc:resources>
+	<mvc:resources location="/src/main/webapp/bootstrap/css/" mapping="bootstrap/css/*.css"></mvc:resources>
+	<mvc:resources location="/src/main/webapp/layer/" mapping="layer/layer.js"></mvc:resources>
+	<mvc:resources location="/src/main/webapp/js/" mapping="js/*.js"></mvc:resources>
+	 -->
+	
 	<mvc:annotation-driven />
+	<!--1 告知我们的servlet去处理 -->
+	<mvc:default-servlet-handler/> 
+	
 	<!-- 这里的路径 com.etc.controller应该是我们的控制器所在的包的名字 自动扫描 -->
-	<context:component-scan base-package="com.etc.controller"></context:component-scan>
+	<context:component-scan base-package="com.etc.exam.controller"></context:component-scan>
+	
+	
 	<!-- 视图的解析器 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

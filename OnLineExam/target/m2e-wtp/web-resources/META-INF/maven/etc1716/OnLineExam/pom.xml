@@ -8,7 +8,7 @@
 	<name>OnLineExam Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
-	<!-- 初始配置开始  2017年11月16日15:53:22  jia-->
+		<!-- 初始配置开始 2017年11月16日15:53:22 jia -->
 		<!-- 添加Spring4.2.2的核心包 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -140,6 +140,12 @@
 			<version>2.5.3</version>
 		</dependency>
 		<!-- 初始配置结束 -->
+		<!-- 与短信验证码接口有关的jar包 -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.9</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>OnLineExam</finalName>
