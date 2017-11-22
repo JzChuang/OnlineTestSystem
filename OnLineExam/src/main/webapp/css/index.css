@@ -1,0 +1,65 @@
+/*头部广告*/
+.head-banner .banner{ background:url("../images/ba_bg.jpg")/*tpa=http://www.educity.cn/tiku/images/ba_bg.jpg*/ no-repeat center center; width:100%; margin: 0 auto;}
+.head-banner .ba_main{}
+
+
+/*功能模块*/
+.function-menu{ padding: 20px 0 0 0;}
+.function-menu .white-box{ width: 998px;border: 1px solid #dfdfdf; background: #fff; box-shadow: 0 2px 3px #f5f5f5;}
+.tk-function{ overflow: hidden; padding: 0 2px;}
+.tk-function li{ float: left;  padding: 30px 62px;}
+.tk-function li.one-box{ width: 72px;}
+.tk-function li.two-box{ width:90px;}
+.tk-function li.three-box{ width:54px;}
+.tk-function li span{ background: url("../images/function-ioc.png")/*tpa=http://www.educity.cn/tiku/images/function-ioc.png*/ no-repeat; display: block; width: 52px; height: 52px; margin: auto;}
+.tk-function li em{ font-size: 18px; text-align: center; display: block; line-height: 18px; padding: 10px 0 0 0;}
+.tk-function .mnsj{ background-position: 0 0;}
+.tk-function .zjlx{ background-position: 0 -91px;}
+.tk-function .mryl{ background-position: 0 -181px;}
+.tk-function .lnzt{ background-position: 0 -272px;}
+.tk-function .zsdlx{background-position: 0 -363px;}
+.tk-function .zsdlx{background-position: 0 -363px;}
+.tk-function .ctk{background-position: 0 -453px;}
+.tk-function .pgbg{background-position: 0 -544px;}
+.tk-function li:hover{ background: #f8f8f8;}
+.topbtn{background:none;border:none;font-size:20px}
+.topbtn:hover{color:orange}
+/*科目*/
+.subject-box{padding: 20px 0 0 0;}
+.rk-ke-box{ background: #fff; width: 1000px;border: 1px solid #dfdfdf; position: relative; padding: 0 0 20px 0; float: left;}
+.rk-ke-box .rk-title{ position: relative; background:url("../images/rk-tb.png")/*tpa=http://www.educity.cn/tiku/images/rk-tb.png*/ no-repeat center center; width: 240px; height: 52px; top:-10px; left:-10px;}
+.rk-ke-box .rk-high, .rk-ke-box .rk-in, .rk-ke-box .rk-low{ height: 36px; width: 566px; overflow: hidden; margin: auto; padding:6px 0 0 0;}
+.rk-ke-box .km-box i{ display: block; width: 265px; height:1px; background: #dfdfdf; float: left; margin-top: 18px;}
+.rk-ke-box .km-box span{ display: block; background: url("../images/level-ioc.png")/*tpa=http://www.educity.cn/tiku/images/level-ioc.png*/ no-repeat; width: 36px; height: 36px;float: left;}
+.rk-high span.high{ background-position: 0 0;}
+.rk-in span.in{ background-position: 0 -76px;}
+.rk-low span.low{ background-position: 0 -152px;}
+.rk-ke-box ul{ width:566px; margin: auto; overflow: hidden; padding: 10px 0 0 0; }
+.rk-ke-box ul li{ background: url("../images/bj-01.png")/*tpa=http://www.educity.cn/tiku/images/bj-01.png*/ no-repeat center center; width: 184px; height: 41px; float: left; margin:0 7px 5px 0;}
+.rk-ke-box ul a{ display: block; width: 182px; height: 36px; text-align: center; line-height: 36px; font-size: 14px; color: #333;}
+.rk-ke-box ul li:hover{ background: url("../images/bj-01-blue.png")/*tpa=http://www.educity.cn/tiku/images/bj-01-blue.png*/ no-repeat;}
+.subject-box .right-box{ float: right;}
+.tx-kc-box, .pmp-kc-box{ width: 378px; background: #fff;border: 1px solid #dfdfdf;position: relative; padding: 0 0 20px 0;}
+.tx-kc-box .tx-title{ position: relative; background:url("../images/tx-tb.png")/*tpa=http://www.educity.cn/tiku/images/tx-tb.png*/ no-repeat center center; width: 240px; height: 52px; top:-10px; left:-10px;}
+.tx-kc-box .km-box .tx-in, .tx-kc-box .km-box .tx-low{width:346px; overflow: hidden; margin: auto; padding:6px 0 0 0;}
+.tx-kc-box .km-box i{ display: block; width:155px; height:1px; background: #dfdfdf; float: left; margin-top: 18px;}
+.tx-kc-box .km-box span{ display: block; background: url("../images/level-ioc.png")/*tpa=http://www.educity.cn/tiku/images/level-ioc.png*/ no-repeat; width: 36px; height: 36px;float: left;}
+.tx-kc-box span.in{ background-position: 0 -228px;}
+.tx-kc-box span.low{ background-position: 0 -304px;}
+.tx-kc-box ul{ width:346px; margin: auto; overflow: hidden; padding: 10px 0 0 0; }
+.tx-kc-box ul li{ background: url("../images/bj-02.png")/*tpa=http://www.educity.cn/tiku/images/bj-02.png*/ no-repeat center center; width: 169px; height: 41px; float: left; margin:0 8px 5px 0;}
+.tx-kc-box ul a{ display: block; width: 182px; height: 36px; text-align: center; line-height: 36px; font-size: 14px; color: #333;}
+.subject-box ul li.clear-margin{ margin-right: 0;}
+.tx-kc-box ul li:hover, .pmp-kc-box .pmp-box:hover{ background:url("../images/bj-02-green.png")/*tpa=http://www.educity.cn/tiku/images/bj-02-green.png*/ no-repeat;}
+.pmp-kc-box{ height:102px;}
+.pmp-kc-box .tx-title{ position: relative; background:url("../images/pmp-tb.png")/*tpa=http://www.educity.cn/tiku/images/pmp-tb.png*/ no-repeat top center; width:170px; height: 52px; top:-10px; left:-10px; padding-top:4px;}
+.pmp-kc-box .pmp-box{ background: url("../images/bj-03.png")/*tpa=http://www.educity.cn/tiku/images/bj-03.png*/ no-repeat center center; width:350px; height: 41px; margin:0 0 0 16px;}
+.pmp-kc-box .pmp-box a{ display: block; width:346px; height: 36px; text-align: center; line-height: 36px; font-size: 14px; color: #333;}
+.tx-kc-box ul li:hover{background:url("../images/bj-02-green.png")/*tpa=http://www.educity.cn/tiku/images/bj-02-green.png*/ no-repeat;}
+.pmp-kc-box .pmp-box:hover{ background:url("../images/bj-03-yellow.png")/*tpa=http://www.educity.cn/tiku/images/bj-03-yellow.png*/ no-repeat;}
+.subject-box li:hover a, .pmp-kc-box .pmp-box:hover a{ color: #fff;text-decoration:none;}
+
+
+
+
+

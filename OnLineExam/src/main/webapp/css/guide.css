@@ -1,0 +1,603 @@
+/*头部广告*/
+.head-banner .banner{ background:url("../images/ba_bg.jpg")/*tpa=http://www.educity.cn/tiku/images/ba_bg.jpg*/ no-repeat center center; width:100%; margin: 0 auto;}
+.head-banner .ba_main{}
+
+
+/*功能模块*/
+.function-menu{ padding: 20px 0 0 0;}
+.function-menu .white-box{ width: 998px;border: 1px solid #dfdfdf; background: #fff; box-shadow: 0 2px 3px #f5f5f5;}
+.tk-function{ overflow: hidden; padding: 0 2px;}
+.tk-function li{ float: left;  padding: 20px 35px;}
+.tk-function li.one-box{ width: 72px;}
+.tk-function li.two-box{ width:90px;}
+.tk-function li.three-box{ width:54px;}
+.tk-function li span{ background: url("../images/function-ioc.png")/*tpa=http://www.educity.cn/tiku/images/function-ioc.png*/ no-repeat; display: block; width: 52px; height: 52px; margin: auto;}
+.tk-function li em{ font-size: 18px; text-align: center; display: block; line-height: 18px; padding: 10px 0 0 0;}
+.tk-function .mnsj{ background-position: 0 0;}
+.tk-function .zjlx{ background-position: 0 -91px;}
+.tk-function .mryl{ background-position: 0 -181px;}
+.tk-function .lnzt{ background-position: 0 -272px;}
+.tk-function .zsdlx{background-position: 0 -363px;}
+.tk-function .zsdlx{background-position: 0 -363px;}
+.tk-function .ctk{background-position: 0 -453px;}
+.tk-function .pgbg{background-position: 0 -544px;}
+.tk-function li:hover{ background: #f8f8f8;}
+
+/*科目*/
+.subject-box{padding: 20px 0 0 0;}
+.rk-ke-box{ background: #fff; width: 598px;border: 1px solid #dfdfdf; position: relative; padding: 0 0 20px 0; float: left;}
+.rk-ke-box .rk-title{ position: relative; background:url("../images/rk-tb.png")/*tpa=http://www.educity.cn/tiku/images/rk-tb.png*/ no-repeat center center; width: 240px; height: 52px; top:-10px; left:-10px;}
+.rk-ke-box .rk-high, .rk-ke-box .rk-in, .rk-ke-box .rk-low{ height: 36px; width: 566px; overflow: hidden; margin: auto; padding:6px 0 0 0;}
+.rk-ke-box .km-box i{ display: block; width: 265px; height:1px; background: #dfdfdf; float: left; margin-top: 18px;}
+.rk-ke-box .km-box span{ display: block; background: url("../images/level-ioc.png")/*tpa=http://www.educity.cn/tiku/images/level-ioc.png*/ no-repeat; width: 36px; height: 36px;float: left;}
+.rk-high span.high{ background-position: 0 0;}
+.rk-in span.in{ background-position: 0 -76px;}
+.rk-low span.low{ background-position: 0 -152px;}
+.rk-ke-box ul{ width:566px; margin: auto; overflow: hidden; padding: 10px 0 0 0; }
+.rk-ke-box ul li{ background: url("../images/bj-01.png")/*tpa=http://www.educity.cn/tiku/images/bj-01.png*/ no-repeat center center; width: 184px; height: 41px; float: left; margin:0 7px 5px 0;}
+.rk-ke-box ul a{ display: block; width: 182px; height: 36px; text-align: center; line-height: 36px; font-size: 14px; color: #333;}
+.rk-ke-box ul li:hover{ background: url("../images/bj-01-blue.png")/*tpa=http://www.educity.cn/tiku/images/bj-01-blue.png*/ no-repeat;}
+.subject-box .right-box{ float: right;}
+.tx-kc-box, .pmp-kc-box{ width: 378px; background: #fff;border: 1px solid #dfdfdf;position: relative; padding: 0 0 20px 0;}
+.tx-kc-box .tx-title{ position: relative; background:url("../images/tx-tb.png")/*tpa=http://www.educity.cn/tiku/images/tx-tb.png*/ no-repeat center center; width: 240px; height: 52px; top:-10px; left:-10px;}
+.tx-kc-box .km-box .tx-in, .tx-kc-box .km-box .tx-low{width:346px; overflow: hidden; margin: auto; padding:6px 0 0 0;}
+.tx-kc-box .km-box i{ display: block; width:155px; height:1px; background: #dfdfdf; float: left; margin-top: 18px;}
+.tx-kc-box .km-box span{ display: block; background: url("../images/level-ioc.png")/*tpa=http://www.educity.cn/tiku/images/level-ioc.png*/ no-repeat; width: 36px; height: 36px;float: left;}
+.tx-kc-box span.in{ background-position: 0 -228px;}
+.tx-kc-box span.low{ background-position: 0 -304px;}
+.tx-kc-box ul{ width:346px; margin: auto; overflow: hidden; padding: 10px 0 0 0; }
+.tx-kc-box ul li{ background: url("../images/bj-02.png")/*tpa=http://www.educity.cn/tiku/images/bj-02.png*/ no-repeat center center; width: 169px; height: 41px; float: left; margin:0 8px 5px 0;}
+.tx-kc-box ul a{ display: block; width: 182px; height: 36px; text-align: center; line-height: 36px; font-size: 14px; color: #333;}
+.subject-box ul li.clear-margin{ margin-right: 0;}
+.tx-kc-box ul li:hover, .pmp-kc-box .pmp-box:hover{ background:url("../images/bj-02-green.png")/*tpa=http://www.educity.cn/tiku/images/bj-02-green.png*/ no-repeat;}
+.pmp-kc-box{ height:102px;}
+.pmp-kc-box .tx-title{ position: relative; background:url("../images/pmp-tb.png")/*tpa=http://www.educity.cn/tiku/images/pmp-tb.png*/ no-repeat top center; width:170px; height: 52px; top:-10px; left:-10px; padding-top:4px;}
+.pmp-kc-box .pmp-box{ background: url("../images/bj-03.png")/*tpa=http://www.educity.cn/tiku/images/bj-03.png*/ no-repeat center center; width:350px; height: 41px; margin:0 0 0 16px;}
+.pmp-kc-box .pmp-box a{ display: block; width:346px; height: 36px; text-align: center; line-height: 36px; font-size: 14px; color: #333;}
+.tx-kc-box ul li:hover{background:url("../images/bj-02-green.png")/*tpa=http://www.educity.cn/tiku/images/bj-02-green.png*/ no-repeat;}
+.pmp-kc-box .pmp-box:hover{ background:url("../images/bj-03-yellow.png")/*tpa=http://www.educity.cn/tiku/images/bj-03-yellow.png*/ no-repeat;}
+.subject-box li:hover a, .pmp-kc-box .pmp-box:hover a{ color: #fff;text-decoration:none;}
+
+/*增加建筑科目开始*/
+.building .rk-ke-box{ margin-top:20px; width:1000px;}
+.building .rk-ke-box .km-box{ width:1000px; height:auto; overflow:hidden;}
+.building .rk-ke-box h2{font-size:16px; line-height:56px; left:20px; margin-right:20px; position:absolute; color:#666 }
+.building .rk-ke-box ul{ margin:inherit; width:auto; float:left; margin-left:112px;}
+.building  .rk-title{ position: relative; background:url("../images/jz-tb1.png")/*tpa=http://www.educity.cn/tiku/images/jz-tb1.png*/ no-repeat center center; width: 250px; height: 52px; top:-10px; left:-10px;}
+.building  .rk-title2{ position: relative; background:url("../images/jz-tb2.png")/*tpa=http://www.educity.cn/tiku/images/jz-tb2.png*/ no-repeat center center; width: 250px; height: 52px; top:-10px; left:-10px;}
+/*增加建筑科目结束*/
+
+/*增加教师资格科目开始*/
+.ntce .rk-ke-box{ margin-top:20px; width:1000px;}
+.ntce .rk-ke-box .km-box{ width:1000px; height:auto; overflow:hidden;}
+.ntce .rk-ke-box h2{font-size:16px; line-height:56px; left:20px; margin-right:20px; position:absolute; color:#666 }
+.ntce .rk-ke-box ul{ margin:inherit; width:auto; float:left; margin-left:112px;}
+.ntce .ntce-title{ position: relative; background:url("../images/ntce-tb.png")/*tpa=http://www.educity.cn/tiku/images/ntce-tb.png*/ no-repeat center center; width: 250px; height: 52px; top:-10px; left:-10px;}
+/*增加教师资格科目结束*/
+
+/*学员专区*/
+.student-area-box{ padding: 40px 0 0 0;overflow: hidden; width: 100%;}
+.student-area-box .title{ text-align:center; font-size:24px; color:#333; padding-bottom: 20px;}
+.student-area{width: 998px;border: 1px solid #dfdfdf; background: #fff; position: relative;}
+.student-area .xyrs{ position:absolute; background: url("../images/ts.png")/*tpa=http://www.educity.cn/tiku/images/ts.png*/ no-repeat center center; width: 77px; height: 78px; left: 0; top: 0;}
+.features ul{ overflow: hidden; padding:40px 5px;}
+.features ul li{ float: left; margin:0 44px;}
+.features i{ display:block; background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat; font-size:24px; line-height:24px; height:24px; color: #333;}
+.features ul span{ width: 128px; display: block;padding-left: 24px; padding-top:6px; color: #999; font-size: 14px; line-height:20px;}
+.features .latest-zt{ width: 152px;}
+.features .latest-zt i{ background-position: 0 -41px; padding-left: 24px;}
+.features .simulation{ width: 162px;}
+.features .simulation i{ background-position: 0 0; padding-left:32px;}
+.features .analytic{ width: 158px;}
+.features .analytic i{ background-position: 0 -88px; padding-left:30px;}
+.features .tbjc{ width: 164px;}
+.features .tbjc i{ background-position: 0 -135px; padding-left:38px;}
+.xyuan-yx{ overflow: hidden; background: #fff; border-right:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf;}
+.xyuan-yx ul{overflow: hidden;}
+.xyuan-yx li{ float: left; width: 249px; border-left:1px solid #dfdfdf; padding-bottom: 30px; }
+.xyuan-yx h2{background: #f8f8f8;line-height: 48px;font-size: 16px;width: 100%; float: left; font-family: microsoft yahei;margin-bottom:30px;border-bottom: 1px solid #ebebeb;font-weight:100; text-align: center;}
+.xyuan-yx span{ display: block; padding-left:45px; font-size: 14px;line-height: 24px; padding-bottom: 10px;} 
+.xyuan-yx span i{font-size: 24px; color: #333; padding-left: 6px; }
+.xyuan-yx a{ width: 140px; height: 30px; background: #0f93d8; text-align: center; line-height: 30px; font-size: 14px; color: #fff; display: block; margin: auto; border-radius: 2px;}
+.xyuan-yx .line-none{ width: 248px;}
+
+.pgbg-js{width: 998px;border: 1px solid #dfdfdf; background: #fff; margin: auto; border-top: none; padding: 30px 0; overflow: hidden;}
+.pgbg-js .pg-wz{ width: 140px; height: 140px; border-radius:70px; float: left; border:solid 1px #e6e6e6; text-align: center; margin-left: 58px; }
+.pgbg-js .pg-wz span{ display: block; font-size: 24px; color: #666; line-height: 32px; padding-top:44px;}
+.pgbg-js .pg-wz a{ display: block; font-size:16px; color: #999; line-height: 18px;}
+.pgbg-js .ys-box{ width: 104px; float: left;}
+.pgbg-js .ys-box span{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat; display: block; margin: auto; padding-bottom: 10px;}
+.pgbg-js .ys-box span.tj{ background-position:0 -181px; width:36px; height: 36px;}
+.pgbg-js .ys-box span.fx{ background-position:0 -264px; width:37px; height: 36px;}
+.pgbg-js .ys-box h3{ width: 104px; height: 24px; line-height: 24px; background: #0f93d8; text-align: center;color: #fff; font-size: 18px;}
+.pgbg-js .ys-box em{ text-align: center; font-size: 14px;  color: #999; line-height: 14px; padding-top:6px; display: block;}
+.pgbg-js .plus-ioc{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -329px; width: 46px; height: 46px; float: left; margin: 0 38px; margin-top:22px;}
+.pgbg-js .equal{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -405px; width: 46px; height:12px; float: left; margin: 0 38px; margin-top:40px;}
+.pgbg-js .wz-xx{ float: left; font-size:16px; color: #999; line-height:26px;padding-top:10px;}
+.pgbg-js .wz-xx i{ font-size:16px; color:#0f93d8; }
+.pgbg-js .box{ padding:25px 58px 0 0; overflow: hidden;float:right;}
+.pgbg-js .pg-wz:hover{ background: #0f93d8; }
+.pgbg-js .pg-wz:hover span{color: #fff;}
+.pgbg-js .pg-wz:hover a{color: #fff;}
+
+/*收费专区*/
+.toll-area{ padding:40px 0 0 0; width: 100%;}
+.toll-area .title{ text-align:center; font-size:24px; color:#333; padding-bottom: 20px;}
+.toll-area .toll-top{ background: url("../images/bj-04.png")/*tpa=http://www.educity.cn/tiku/images/bj-04.png*/ no-repeat 0 0; height: 10px; }
+.toll-area-box{width:1000px; background: #fff;overflow: hidden; }
+.tk-km-menu{background: #e9a543; width: 90px; padding: 60px 0 82px 0;}
+.tk-km-menu ul{border-top: solid 1px #f2c98e;}
+.tk-km-menu li{ height: 48px; line-height: 48px; text-align: center; font-size: 16px; color: #fff; border-bottom: solid 1px #f2c98e; cursor: pointer;}
+.tk-km-menu li.gd1{background-color:#fff; color: #e48f33; }
+.home-toll-list-box{border: 1px solid #dfdfdf;float: left; border-left: none; overflow: hidden; width: 909px; height: 288px;}
+.home-toll-list{ width:270px; float: left; padding-left: 24px;}
+.home-toll-list dt{ overflow: hidden;border-bottom: solid 1px #dfdfdf; padding: 20px 0 10px 0;}
+.home-toll-list dt span{ font-size: 16px; line-height: 16px; display: block; float: left; color: #333;}
+.home-toll-list dt a{ display: block; float: right; color:#999; font-size: 16px; line-height: 16px;}
+.home-toll-list dd{ padding-top:18px;}
+.home-toll-list h4{ line-height: 16px; height: 16px;width:270px;text-overflow:ellipsis; white-space:nowrap; overflow: hidden;}
+.home-toll-list h4 a{ color: #666; font-size: 14px;font-weight:100;  line-height: 16px;}
+.home-toll-list .xx-box{ overflow: hidden; padding-top: 10px; display: block;}
+.home-toll-list .xx-box i{ color: #999; float: left; display: block; font-size: 12px; background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -448px; line-height: 14px; height: 14px; padding-left: 22px;}
+.home-toll-list .xx-box a{ display: block; float: right; font-size: 14px;line-height: 12px; height: 14px; color: #999; }
+.home-toll-list h4 a:hover, .home-toll-list dt a:hover, .home-toll-list .xx-box a:hover{ color: #0f93d8; text-decoration: underline;}
+
+.toll-area .free-top{ background: url("../images/bj-04.png")/*tpa=http://www.educity.cn/tiku/images/bj-04.png*/ no-repeat 0 -37px; height: 10px; }
+.toll-area .free{ background: #53c58e;}
+.toll-area .free ul{border-top: solid 1px #98dcbb;}
+.toll-area .free li{ height: 48px; line-height: 48px; text-align: center; font-size: 16px; color: #fff; border-bottom: solid 1px #98dcbb; cursor: pointer;}
+.toll-area .free li.gd1{background-color:#fff; color: #3fb773; }
+
+/*科目状态显示*/
+.subject-status{ background:#fff; width: 998px;border: 1px solid #dfdfdf; margin: auto;  }
+.subject-status .km-section{ padding-left: 30px;}
+.km-section span{ color: #333; font-size: 18px; line-height:66px; }
+.km-section a{ font-size: 14px; color: #0f93d8; padding-left: 6px;}
+.subject-status .exam-sjtx{ font-size: 14px; line-height: 66px; padding-right:12px; color: #999; background:url("../images/triangle.png")/*tpa=http://www.educity.cn/tiku/images/triangle.png*/ no-repeat right center; margin-right: 30px; cursor: pointer; position: relative;z-index: 1;}
+.subject-status .exam-sjtx i{ color: #ff0000; padding: 0 4px;}
+.pop-window{ position: absolute; width: 312px; right:-34px; top:42px; display: none; z-index: 1;}
+.pop-window .top-box{ background:url("../images/bj-05.png")/*tpa=http://www.educity.cn/tiku/images/bj-05.png*/ no-repeat 0 0;width: 312px;height: 13px;}
+.pop-window .central{width: 312px;  background:url("../images/bj-06.png")/*tpa=http://www.educity.cn/tiku/images/bj-06.png*/;overflow: hidden;}
+.pop-window .central ul{overflow: hidden;width: 312px; padding:20px 20px 10px 20px; }
+.pop-window .central li{ float:left; margin: 0 10px 10px 0;}
+.pop-window .central li.clear-margin{ margin-right: 0;}
+.pop-window .central a{ display: block;width:80px; height: 26px;border: 1px solid #dfdfdf; line-height: 26px; text-align: center; border-radius: 2px; font-size: 14px; color: #666; }
+.pop-window .bottom-box{ background: url("../images/bj-05.png")/*tpa=http://www.educity.cn/tiku/images/bj-05.png*/ no-repeat 0 -158px; height: 4px;}
+.pop-window .central a:hover{ background:#0f93d8; color:#fff;}
+.subject-status .exam-sjtx:hover{text-decoration: underline;}
+
+
+/*弹出层*/
+.mask-layer{z-index:1;position: fixed;top: 0;left: 0; width: 100%;height: 100%; background:#000; opacity: 0.6;filter: alpha(opacity=40);display: none;}
+.the-popup{ width: 870px; position:fixed; left: 50%; margin-left:-435px;z-index: 2; top:50%; margin-top: -20%; display:none; height:80%; overflow-y:auto; }
+.the-popup .tc-head{ background: url("../images/bj-07.png")/*tpa=http://www.educity.cn/tiku/images/bj-07.png*/ no-repeat center top; overflow: hidden; height: 50px; padding:14px 14px 0 14px;}
+.the-popup .tc-head h3{ color: #666;font-size: 14px; line-height:50px; padding-left: 22px; font-weight: 100; float: left;}
+.the-popup .tc-head a{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -505px; width: 14px; height: 13px; display: block; float: right; padding:18px 0 0 22px;}
+.the-popup .xian{ width:824px; height: 1px; background:#dfdfdf; margin: auto;}
+.tc-subject-bj{ background: url("../images/bj-08.png")/*tpa=http://www.educity.cn/tiku/images/bj-08.png*/ center top; padding:0 14px 0 14px; overflow: hidden;}
+.the-popup .tail-box{ background: url("../images/bj-10.png")/*tpa=http://www.educity.cn/tiku/images/bj-10.png*/ no-repeat center center; height: 24px;}
+.selected-km .biti{ padding:16px 22px 10px 22px; overflow: hidden;}
+.selected-km .biti span{ display: block; float: left; background:url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -566px; font-size:18px; line-height:21px; padding-left: 33px; }
+.selected-km .biti a{ float: right; font-size: 16px; color: #999;background:url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -617px; line-height: 16px; padding-left: 20px;}
+.selected-km .yx-kmlb{ overflow: hidden; padding: 0 12px;}
+.selected-km .yx-kmlb li{ float: left; width: 178px; height: 30px; border: dashed 1px #dfdfdf; background: #f0f1f2;margin:6px 10px;}
+.selected-km .yx-kmlb a{ display: block; text-align: center; line-height: 32px; font-size: 14px; color: #333;}
+.selected-km .yx-kmlb li:hover{border:solid 1px #0f93d8;background: #0f93d8;}
+.selected-km .yx-kmlb li:hover a{ color:#fff;}
+.tc-subject-bj{ padding-bottom:30px;}
+.tc-subject-bj .xuxian{ width: 780px; height:1px;border-bottom:dashed 1px #dfdfdf; margin: 14px auto 20px auto;}
+.tc-subject-bj .tc-search{ overflow: hidden; width:778px; margin: auto; border: #dbdbdb solid 1px; border-radius: 20px;}
+.tc-subject-bj .tc-search .tc-cr{ border:solid 1px #fff;float: left; line-height: 28px; height: 28px;width:680px; padding-left: 10px; border-radius: 30px 0 0 30px;color: #999; display: block;}
+.tc-subject-bj .tc-search .tc-ss{border:solid 1px #f0f1f2;cursor: pointer;font-size: 14px;background-color: #f0f1f2; line-height: 30px; display: block;float:left;color: #999; width:86px; border-radius: 0 30px 30px 0; border-left: 1px solid #ececec;}
+.tc-subject-bj .tc-search:hover{border:solid 1px #0f93d8;}
+.tc-subject-bj .tc-search:hover .tc-ss{ background:#0f93d8; color: #fff;border:solid 1px #0f93d8;}
+.km-fl-bigbk{ width: 780px; margin: auto;overflow: hidden; padding-top: 6px;}
+.km-fl-bigbk .biti{ border-bottom:solid 1px #dfdfdf; padding: 11px 0 10px 0; position: relative; margin-bottom: 5px;  }
+.km-fl-bigbk .biti span{ position: absolute; left: 0; background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat #fff; height: 22px; line-height: 22px; padding-left:33px; padding-right: 10px; font-size: 18px;color:#333;}
+.km-fl-bigbk .biti span.rk-ioc{ background-position:0 -653px; }
+.km-fl-bigbk .biti span.tx-ioc{ background-position:0 -695px; }
+.km-fl-bigbk .biti span.pmp-ioc{ background-position:0 -737px; }
+.km-fl-bigbk dl{ padding:15px 0 0 0; overflow: hidden;}
+.km-fl-bigbk dl dt{  border-left: solid 4px #0f93d8; line-height: 18px; height: 18px; font-size: 16px; color:#0f93d8; padding-left: 10px; margin-bottom:5px;}
+.km-fl-bigbk dl dd{ margin:5px 4px 0 4px; background:url("../images/bj-09.png")/*tpa=http://www.educity.cn/tiku/images/bj-09.png*/ no-repeat center center; width:186px; height: 38px;float: left;}
+.km-fl-bigbk dd a{ padding: 1px 0 0 0; width: 182px; height:32px; text-align: center; line-height: 32px; display: block; color: #333; }
+.km-fl-bigbk dl dd:hover{ background: url("../images/bj-09-blue.png")/*tpa=http://www.educity.cn/tiku/images/bj-09-blue.png*/ no-repeat center center;}
+.km-fl-bigbk dd:hover a{ color:#fff;}
+
+/*模拟页面*/
+.select-function-box{ width: 100%;padding: 20px 0 0 0;}
+.select-function{background:#fff; width: 998px;border: 1px solid #dfdfdf; margin: auto;}
+.box-class{height: 48px;}
+.box-class dl{position: relative; width:490px;height: 48px;}
+.box-class dt{ background: url("../images/bj-11.png")/*tpa=http://www.educity.cn/tiku/images/bj-11.png*/ no-repeat center top ; width: 70px; height: 54px; position: relative; top: -6px;float: left;}
+.box-class dt span{ width: 64px; height:42px; display: block; color: #fff; font-size: 14px; line-height:18px; text-align: center; padding:9px 0 0 0;}
+.box-class dd{ float: left; line-height: 48px; width: 140px;}
+.box-class dd a{ text-align: center; font-size: 18px; display: block;}
+.box-class dd.cut{ background: #008cd6;}
+.box-class dd.cut a{ color: #fff;}
+.box-class dd:hover{ background: #008cd6;}
+.box-class dd:hover a{ color: #fff;}
+.xueyuam dl{position: relative; width: 509px;height: 48px;}
+.mn-felei-box{width: 100%;}
+.mn-felei-box .mn-felei{background:#fff; width: 998px;border: 1px solid #dfdfdf; margin: auto; border-top: none; padding:20px 0  10px 0;}
+.mn-felei dl{ overflow:hidden; padding:0 30px 10px 30px;}
+.mn-felei dt{ float: left; color: #999; line-height: 20px;}
+.mn-felei dd{float: left; padding:0 10px;line-height: 20px;}
+.mn-felei dd a{ padding:4px 3px; font-family:"宋体"; color: #333;}
+.mn-felei dd .cut{ background: #008cd6; color: #fff; font-family:"宋体";}
+.mn-felei dd a:hover{ background: #008cd6; color: #fff; font-family:"宋体";}
+
+/*列表*/
+.tk-list-mn{width: 100%;padding: 20px 0 0 0;}
+.tk-list-mn .sort-box{background:#f5f5f5; width: 998px;border: 1px solid #dfdfdf; margin: auto; overflow:hidden;}
+.sort-box p{ float: left;line-height:24px; font-size: 24px;padding:17px 0 17px 30px;color: #333;}
+.tk-list-mn .jrlx-ioc{ background: url("../images/ioc07.png")/*tpa=http://www.educity.cn/tiku/images/ioc07.png*/ no-repeat left center; margin-left: 30px; }
+.tk-list-mn .wqxl-ioc{background: url("../images/ioc08.png")/*tpa=http://www.educity.cn/tiku/images/ioc08.png*/ no-repeat left center; margin-left: 30px;padding:17px 0 17px 32px; }
+.mryl-wz{ font-size:54px; background: #fff; width: 998px;border: 1px solid #dfdfdf; margin: auto; overflow:hidden; text-align: center; line-height: 64px; padding:50px 0; font-weight: bold; color: #008cd6;}
+.sort-box dl{  padding:17px 0 17px 30px; overflow: hidden; float: left;}
+.sort-box dl dt{ float: left;color: #999; line-height:24px;}
+.sort-box dd{float: left; margin: 0 5px; width:74px; height:22px;border: 1px solid #dfdfdf; background: #fff; text-align: center; line-height: 22px; color: #999;  }
+.sort-box dd:hover{background: #008cd6;border: 1px solid #fff;}
+.sort-box dd:hover a{color: #fff;}
+.sort-box .on{background: #008cd6;border: 1px solid #fff;}
+.sort-box .on a{ background:url("../images/on-ioc.png")/*tpa=http://www.educity.cn/tiku/images/on-ioc.png*/ no-repeat right center; color: #fff; padding-right: 11px;}
+.sort-box .under{background: #008cd6;border: 1px solid #fff;}
+.sort-box .under a{ background:url("../images/under-ioc.png")/*tpa=http://www.educity.cn/tiku/images/under-ioc.png*/ no-repeat right center; color: #fff; padding-right: 11px;}
+.sort-box .cz{ float: right; padding-right: 30px; line-height: 60px; }
+.sort-box .cz a{ font-size: 14px; color: #666;}
+.sort-box .cz a:hover{color:#008cd6;}
+.liebiao-moban{background:#fff; width: 998px;border: 1px solid #dfdfdf; margin: auto; border-top: none;}
+.liebiao-moban ul{ padding:0 30px;}
+.liebiao-moban li{ border-bottom: solid 1px #dfdfdf; width: 938px; position: relative; height: 88px;}
+.liebiao-moban-box-one{ width: 740px; float: left;padding: 20px 0;}
+.liebiao-moban-box-one h2{ font-weight: 100; width: 740px; text-overflow: ellipsis;white-space: nowrap; overflow: hidden;}
+.liebiao-moban-box-one h2 a{font-size: 16px; color: #333;}
+.liebiao-moban-box-one span{ display: block; height: 12px; padding: 14px 0 0 0;}
+.liebiao-moban-box-one span i{ color: #999; font-size: 12px; line-height: 12px; padding-right: 50px;}
+.liebiao-moban-box-one span i.red{ color: #ff0000;}
+.liebiao-moban-box-two{ float: right; overflow: hidden; width: 160px;padding: 20px 0;}
+.liebiao-moban-box-two a{ display: block; float: left;}
+.liebiao-moban-box-two a.cwxy{ line-height: 37px; color: #999; margin-right: 16px;}
+.liebiao-moban-box-two a.xyzy{ background: url("../images/bj-13.png")/*tpa=http://www.educity.cn/tiku/images/bj-13.png*/ no-repeat center center; width: 94px; height: 44px; text-align: center; font-size: 14px; line-height: 37px;color: #999;float: right;}
+.liebiao-moban-box-two a.jxzt{background: url("../images/bj-16.png")/*tpa=http://www.educity.cn/tiku/images/bj-16.png*/ no-repeat center center; width: 94px; height: 44px; text-align: center; font-size: 14px; line-height: 37px;color: #fff;
+	float: right;}
+.liebiao-moban-box-two a.xyzy:hover{ background: url("../images/bj-13-blue.png")/*tpa=http://www.educity.cn/tiku/images/bj-13-blue.png*/ no-repeat center center; color: #fff; text-decoration: none;}
+.liebiao-moban-box-one h2 a:hover{ color: #0f93d8;}
+.liebiao-moban li:hover{ border-bottom:solid 1px #fff; cursor: pointer;}
+.liebiao-moban li:hover .mb-one{ background: url("../images/bj-12.png")/*tpa=http://www.educity.cn/tiku/images/bj-12.png*/ no-repeat center center; position:absolute; width:938px; padding: 8px 38px; height:90px; left: 50%; margin-left:-507px; top: -9px;}
+.lnzt-cut li:hover .xymf{ background: url("../images/xymf.png")/*tpa=http://www.educity.cn/tiku/images/xymf.png*/ no-repeat center center;  width: 74px; height: 49px; position: absolute; right:7px; bottom:8px;}
+
+
+/*页码*/
+.ui-page{padding:40px 0px 40px; text-align: center;clear: both;}
+.ui-page a, .ui-page b {display: inline-block;padding: 0px 9px; color: #333; background: #fff; border-radius: 30px; border: 1px #ccc solid;  height: 24px; margin: 0px 3px;font: bold 12px/25px Arial; }
+.ui-page a, .ui-page b {display: inline-block; padding: 0px 9px; color: #333; background: #fff;   border-radius: 30px; border: 1px #ccc solid; height: 24px;   margin: 0px 3px; font: bold 12px/25px Arial; }
+.ui-page a.ui-page-turn {display: inline-block;  padding: 0px 12px; font: normal 12px/24px "\u5b8b\u4f53";content: '\3C';}
+.ui-page a:hover{background:#0f93d8;color: #FFF; border: 1px #0f93d8 solid;text-decoration: none;}
+.ui-page a.z-on, .ui-page a.z-on:hover {background: #0f93d8;color: #FFF; border: 1px #0f93d8 solid;}
+
+/*进度条*/
+.exercise-box{width: 100%;}
+.exercise{background:#fff; width: 998px;border: 1px solid #dfdfdf; border-top: none;margin: auto; overflow:hidden; padding: 30px 0;}
+.exercise .lef-jd{ padding:0 0 0 30px; overflow: hidden;}
+.lef-jd .wzsl{ font-size: 16px; color: #333; display: block; float: left; line-height: 16px; padding-right: 10px;}
+.lef-jd .wzsl i{ color: #ff0000;}
+.lef-jd .qb{ width:240px; height: 16px; border-radius: 8px; background: #e2e3e4; display: block; float: left;}
+.lef-jd .qb em{ display: block; width:80px; height:16px; border-radius: 8px; background:#ff0000;}
+.exercise .czqk{font-size: 16px; color: #999; padding-right: 30px;}
+
+/*浮动菜单*/
+.fl-box{ width: 1000px; height: 1px; position:fixed;left: 50%; margin-left: -500px;top:156px;  }
+.fl-menu{width:124px;position: relative;left:-130px;}
+.fl-menu-box{position:relative;width:120px;background: #fff; margin:0 2px;}
+.fl-menu .fl-top{ background: url("../images/bj-14.png")/*tpa=http://www.educity.cn/tiku/images/bj-14.png*/ no-repeat center center; width: 124px; position: relative; height: 62px; left: -2px; top:0; }
+.fl-menu .fl-top a{ width: 124px; height: 60px; display: block; text-align: center; line-height: 60px; color: #fff; font-size: 18px;text-decoration: none; }
+.fl-menu li{ width: 120px;  line-height: 52px; text-align: center; border-bottom:1px solid #dfdfdf; }
+.fl-menu li.cut{background:#0f93d8;}
+.fl-menu li.cut a{ color: #fff;}
+.fl-menu li a{ font-size: 14px; color: #333; display: block;}
+.fl-menu li:hover{background:#0f93d8;}
+.fl-menu li:hover a{ color: #fff;}
+.fl-menu .phone-tk{width: 120px; text-align: center; padding: 20px 0;border-bottom:1px solid #dfdfdf;position: relative;}
+.fl-menu .serm{border:1px solid #dfdfdf; position: absolute; left: 120px;margin-left: 6px; top:0; background: #fff; padding:8px 6px; display: none; 
+  -webkit-box-shadow:0 0 3px 1px #ccc;  
+  -moz-box-shadow:0 0 3px 1px #ccc;  
+  box-shadow:0 0 3px 1px #ccc;  
+  z-index: 2;}
+.fl-menu .serm em{ font-size: 14px; color: #333; line-height: 24px; display: block; width: 120px;}
+.fl-menu .phone-tk span{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat left -779px;font-size: 14px;  color: #0f93d8; line-height: 15px; display: block; width:56px; padding-left: 20px; height: 16px; margin:auto; }
+.fl-menu .phone-tk:hover { background:#0f93d8;}
+.fl-menu .phone-tk:hover span{ color: #fff; background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat left -801px;}
+.fl-menu .back-top{ padding: 14px 0; text-align: center; color: #999; font-size: 14px; line-height: 18px; cursor: pointer;}
+.fl-menu .back-top:hover{ background:#0f93d8; color: #fff;}
+
+/*每日一练*/
+.daily-practice{ width: 100%;}
+.daily-practice .tiliang{background:#fff; width: 998px;border: 1px solid #dfdfdf; border-top: none;margin: auto;}
+.tiliang dl{overflow: hidden; padding:20px 30px; border-bottom: 1px solid #dfdfdf; }
+.tiliang dl dt{ font-size: 14px; color: #999; line-height: 40px; float: left;}
+.tiliang dl dd{ width:58px; height:38px;border: 1px solid #dfdfdf; float: left; background: #f9f9fa; text-align: center; line-height: 40px; color: #333; font-size: 14px; margin: 0 5px; 
+cursor: pointer;}
+.tiliang .start-practice{ width: 138px; height:46px;border: 1px solid #dfdfdf; margin:30px auto 44px auto;}
+.tiliang .start-practice a{ display:block; color: #333;  font-size: 14px; text-align: center; line-height: 46px;}
+.tiliang dl .cut { background:#0f93d8;color: #fff;border: 1px solid #0f93d8;}
+.tiliang dl dd:hover  { background:#0f93d8;color: #fff;}
+.tiliang .start-practice:hover  { background:#0f93d8;}
+.tiliang .start-practice:hover a{ color: #fff;}
+
+/*错题本*/
+.wrong-exam-box{width: 100%;}
+.wrong-exam{background:#fff; width: 998px;border: 1px solid #dfdfdf; border-top: none;margin: auto;}
+.wrong-exam span{ overflow: hidden; display: block; width: 320px; margin: auto; padding:78px 0;}
+.wrong-exam span a{width: 138px; height:46px;border: 1px solid #dfdfdf; display: block; color: #333; float: left; text-align: center; line-height: 46px; margin:0 10px; font-size: 14px;}
+.wrong-exam span .my-ctb{ background: #008cd6; color: #fff;border: 1px solid  #008cd6;}
+.wrong-exam span .rm-ctb:hover{ background: #ff0000; color: #fff;border: 1px solid  #ff0000;}
+
+/*试题详情*/
+.details-trial-box{ width: 100%; padding: 20px 0 0 0;}
+.details-trial{background:#fff; width: 998px;border: 1px solid #dfdfdf; margin: auto; padding-bottom: 30px; position: relative;}
+.details-trial .shitimz{ color: #333; font-size:24px; font-weight: 100; padding:50px 0 20px 0; width: 938px; margin: auto; line-height: 32px; border-bottom: dashed 1px #dfdfdf;}
+.details-trial .shiti-xq{width: 510px; margin:0 0 0 30px; overflow: hidden; padding:20px 0 40px 0; border-bottom: dashed 1px #dfdfdf;}
+.details-trial .shiti-xq li{ display: block; float: left; padding-right: 60px; padding:0 60px 0 0;} 
+.shiti-xq span{ display: block; color: #999; padding-bottom: 20px; font-size: 14px; line-height: 14px;}
+.shiti-xq span em{ color: #333;}
+.details-trial .shiti-xq li.clear-margin{ padding-right: 0;}
+.shiti-zl{  color: #999; padding:40px 0 20px 30px; overflow: hidden;}
+.shiti-zl i{float: left; line-height: 17px;font-size: 16px;}
+.shiti-zl span{ display: block; background:url("../images/xing-ioc.png")/*tpa=http://www.educity.cn/tiku/images/xing-ioc.png*/ no-repeat 0 0; width: 106px; height:17px; float: left; overflow: hidden;}
+.shiti-zl span em{ display: block; background: url("../images/xing-ioc.png")/*tpa=http://www.educity.cn/tiku/images/xing-ioc.png*/ no-repeat 0 -31px; width: 18px; height: 17px;margin: 0 4px 0 0; float: left;}
+.details-trial .bd-box{ overflow: hidden; padding: 0 0 0 30px;}
+.details-trial .bd-box span{ display: block; overflow: hidden;}
+.details-trial span.xi-wz{ padding:10px 0 20px 0;}
+.details-trial span.xi-wz i{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat; color:#0e94e1; line-height: 25px; width: 112px; height:25px; font-size: 14px; display: block; float: left; padding-left: 33px;}
+.details-trial span.xi-wz i.dsrzg-ioc{ background-position:0 -857px;}
+.details-trial span.xi-wz i.gz-ioc{ background-position:0 -894px; margin-left: 50px;}
+.details-trial span.anui a{ width: 145px; height:50px; display: block; text-align: center;line-height:50px; border-radius: 4px; float: left; color: #fff; font-size: 16px;}
+.details-trial span.anui .ksks{ background: #008cd6;}
+.details-trial span.anui .xuymf-ioc{ background:#ff0000; margin-left:50px;}
+.details-trial span.anui i{ display: block; background:url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat center -924px; line-height:16px; padding-left: 23px; margin-top: 18px; height:16px;}
+
+.kstx-rig{ position:absolute; right:-10px; top: 126px;}
+.kstx-rig .top-box{ background: url("../images/bj-15.png")/*tpa=http://www.educity.cn/tiku/images/bj-15.png*/ no-repeat  right center; width: 307px; height: 5px;}
+.kstx-rig .title{ background:#0f93d8; color: #fff; padding: 16px 0 0 22px;width:285px; height: 42px; font-size: 18px; line-height: 18px; position: relative;}
+.kstx-rig .title span{background:url("../images/tx-01.png")/*tpa=http://www.educity.cn/tiku/images/tx-01.png*/ no-repeat center center; width: 18px; height: 8px; display: block; position: absolute; bottom: 0; left:23px;}
+.kstx-rig .content-nav{ width: 303px; border: solid 2px #dfdfdf; background: #fff; border-top: none;}
+.kstx-rig .content-nav dl{ overflow: hidden; padding: 20px 0 20px 20px;}
+.kstx-rig .content-nav dt{background:url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat -41px -957px; width: 40px; height: 40px; float: left;}
+.kstx-rig .content-nav dd{ width:214px; font-size:16px;float: left; line-height: 20px; padding-left: 10px;}
+.kstx-rig .content-nav span{ font-language-override: 20px; font-weight: bold; color: #ff0000; padding: 0 6px;}
+.kstx-rig .content-nav ul{ overflow: hidden; padding-left: 15px; padding-bottom: 15px;}
+.kstx-rig .content-nav li{ width:79px; height: 26px; text-align: center;line-height: 28px; border: solid 1px #dfdfdf; border-radius: 2px; float: left; margin:0 5px 5px 5px;}
+.kstx-rig .content-nav a{ display: block; font-size: 14px; color: #666;}
+.kstx-rig .content-nav li:hover{ background: #008cd6; border: solid 1px #fff;}
+.kstx-rig li:hover a{ color: #fff;}
+.tixin-jies-box{ width: 100%; padding: 20px 0 0 0;}
+.tixin-jies{ width: 938px; background: #fff;border: 1px solid #dfdfdf; margin: auto; padding: 20px 30px;}
+.tixin-jies .title i{ font-size: 18px; color: #2e3639; background: url("../images/ioc06.png")/*tpa=http://www.educity.cn/tiku/images/ioc06.png*/ no-repeat left center; padding-left: 49px; line-height: 43px; display: inline-block;}
+.tixin-jies ul{ margin-left: 19px; border-left: solid 1px #d6dbdb; position: relative;}
+.tixin-jies ul li{ position: relative; left: -7px; padding: 20px 0 0 0;}
+.tixin-jies ul .bd-tltle{ background: url("../images/tx-07.png")/*tpa=http://www.educity.cn/tiku/images/tx-07.png*/ no-repeat left center; padding-left: 35px; line-height: 13px;}
+.tixin-jies .bd-txt{ padding-left: 28px; width: 829px;position: relative; padding-top: 16px;}
+.tixin-jies .bd-txt i{ position: absolute; display: block; width:10px; height: 7px; top:10px; left:60px; background: url("../images/tx-08.png")/*tpa=http://www.educity.cn/tiku/images/tx-08.png*/ no-repeat center top;}
+.tixin-jies .bd-txt span{ border: solid 1px #d6dbdb; display: block; padding:14px 30px;}
+.tixin-jies .bd-txt em{ font-size: 14px; line-height: 24px; color: #999999;}
+
+.rmgzst-box{width: 100%; padding: 20px 0 0 0;}
+.rmgzst{width:938px; background: #fff;border: 1px solid #dfdfdf; margin: auto;  padding:20px 30px;}
+.rmgzst .title, .xgsjtj .title{ border-bottom: solid 1px #d6dbdb;}
+.rmgzst .title span, .xgsjtj .title span{ font-size: 18px; color: #2e3639; line-height:18px; padding-bottom: 20px; border-bottom: solid 2px #0e94e1; display: inline-block;}
+.rmgzst ul{ overflow: hidden; padding:20px 0;}
+.rmgzst ul li{ padding: 0 0 14px 0; width: 430px;}
+.rmgzst li a{ color: #999; font-size: 14px; line-height: 14px; height: 14px; width: 430px; display: block;overflow: hidden;}
+.rmgzst li i{ color: #999; font-size: 14px; line-height: 14px; padding-right: 6px;}
+.rmgzst li:hover a, .rmgzst li:hover i{ color: #0e94e1;}
+
+/*评估报告*/
+.kmxs-toubu-box{width: 100%; padding: 20px 0 0 0;}
+.kmxs-toubu{width:938px; background: #fff;border: 1px solid #dfdfdf; margin: auto; overflow: hidden;  padding:20px 30px;}
+.kmxs-toubu .pgbg-kmxs{ float: left; display: block; font-size: 24px; color: #008cd6; line-height: 24px; height: 24px;}
+.kmxs-toubu .pgbg-kmxs i{  color: #333; border-left:1px solid #dfdfdf;line-height: 24px; padding-left: 10px; margin-left: 10px;}
+.kmxs-toubu .jiathis_style{ overflow: hidden;}
+.kmxs-toubu .jiathis_style .jiathis_txt{ font-size: 16px; display: block; line-height: 30px!important; color: #999;}
+.kmxs-toubu .jiathis_style a{ display: block; width: 30px; height: 30px;float: left;margin:0 5px;}
+.kmxs-toubu .jiathis_style a span{ background: url("../images/fx-ioc.png")/*tpa=http://www.educity.cn/tiku/images/fx-ioc.png*/ no-repeat; width:30px; padding: 0!important; height:30px!important;  display: block;}
+.kmxs-toubu .jiathis_style .jtico_qzone{ background-position:-40px 0;}
+.kmxs-toubu .jiathis_style .jtico_tsina{ background-position:-122px 0;}
+.kmxs-toubu .jiathis_style .jtico_tqq{ background-position:-161px 0;}
+.kmxs-toubu .jiathis_style .jtico_weixin{ background-position:-81px 0;}
+.kmxs-toubu .jiathis_style .jtico_cqq{ background-position:0 0;}
+.kmxs-toubu .jiathis_style .jtico_qzone:hover{background-position:-40px -53px;}
+.kmxs-toubu .jiathis_style .jtico_tsina:hover{ background-position:-122px -53px;}
+.kmxs-toubu .jiathis_style .jtico_tqq:hover{ background-position:-161px -53px;}
+.kmxs-toubu .jiathis_style .jtico_weixin:hover{ background-position:-81px -53px;}
+.kmxs-toubu .jiathis_style .jtico_cqq:hover{ background-position:0 -53px;}
+
+.pgbf-gg-mb{width: 100%; padding: 10px 0 0 0;}
+.occuracy, .pgbf-gg-mbbox{width:938px; background: #fff;border: 1px solid #dfdfdf; margin: auto; overflow: hidden;  padding:0 30px 30px 30px;}
+.pgbf-gg-mb .title{ font-size: 24px; color: #333333;border-bottom:1px solid #dfdfdf; padding: 30px 0 10px 0; line-height: 24px;}
+.occuracy .zql-wzxs, .answer-total .zql-wzxs{ font-size: 32px; color: #999; text-align: center; padding:40px 0;}
+.occuracy .zql-wzxs b{ color: #008cd6; font-size: 94px; line-height: 94px;padding-right: 10px;}
+.occuracy .qtxx{ width: 840px; border-top: dashed 1px #dfdfdf; margin: auto; overflow: hidden;}
+.occuracy .qtxx li{ padding-top: 20px; color: #999; font-size: 14px; text-align: left; line-height: 18px;}
+.occuracy .qtxx i{ color: #008cd6; font-size: 18px; padding:0 6px;}
+.qtxx .rig li{ text-align: right;}
+.occuracy .my-ctk{width: 120px; height: 38px; margin: auto; padding: 20px 0 40px 0; }
+.occuracy .my-ctk a{text-align: center; line-height: 38px;width: 120px; height: 38px; margin: auto; display: block;border: 1px solid #dfdfdf; background: #f4f4f4; color: #333; font-size: 14px;}
+.occuracy .my-ctk a:hover{ background: #008cd6; color: #fff;border: 1px solid #008cd6;}
+
+.answer-total{ width: 430px; padding-bottom: 40px;}
+.answer-total .zql-wzxs b{ font-size: 64px; color: #008cd6;line-height: 94px;padding-right: 10px;}
+.answer-total .qtxx{ width: 350px; border-top: dashed 1px #dfdfdf; margin: auto; overflow: hidden;}
+.answer-total .qtxx li{ padding-top: 20px; color: #999; font-size: 14px; text-align:center; line-height: 18px;}
+.answer-total .qtxx i{ color: #008cd6; font-size: 18px; padding:0 6px;}
+
+.zsdgk .zql-wzxs{ font-size:18px; color: #999; text-align: center; padding:40px 0;}
+.zsdgk .zql-wzxs b{ font-size: 64px; color: #008cd6;line-height: 94px;padding-right: 10px;}
+
+/*表*/
+.ln-exams-box{width:938px;font-size: 14px; border-bottom:solid 1px #d6dbdb;}
+.ln-exams-box dt{border:solid 1px #d6dbdb; border-bottom: none;line-height: 40px; font-size: 16px; color: #333; text-align: center;}
+.ln-exams-box .blue{ background:#008cd6;line-height:40px; font-size:12px; overflow: hidden; border-top: none;width:938px;}
+.ln-exams-box .blue span{ color: #fff; display: block; float: left; text-align: center; border-left: none;}
+.ln-exams-box span a{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat; font-size: 14px; }
+.ln-exams-box span .sp{ background-position:0 -1015px; color: #008cd6; padding:0 20px 0 16px;}
+.ln-exams-box span .pxqh{ background-position:0 -1049px;color: #ff0000; padding:0 0 0 18px;}
+.ln-exams-box .subnav i{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat;background-position:0 -1089px;padding-left: 19px;}
+.ln-exams-box .currentdt i{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat; background-position:0 -1130px;padding-left: 19px;}
+.navcontent li, .ln-exams-box dd{width:937px; overflow: hidden;border-top:solid 1px #d6dbdb;border-right:solid 1px #d6dbdb;  cursor: pointer;}
+.ln-exams-box span{ border-left:solid 1px #d6dbdb; display: block; float: left; line-height: 42px; text-align: center; color: #333;}
+.navcontent{ display: none;}
+.ln-exams-box dd:hover, .navcontent li:hover{ background: #f7f7f7;}
+.ln-exams-box .blue:hover{ background:#0584c8;}
+.tail-link{ width: 400px; margin: auto; overflow: hidden; padding:40px 4px 4px 4px;}
+.tail-link a{ display: block; width: 180px; height: 62px; text-align: center; line-height: 62px; font-size: 20px; float: left; margin:0 10px; background: #fff; -webkit-box-shadow:0 0 3px 1px #ccc;-moz-box-shadow:0 0 3px 1px #ccc;box-shadow:0 0 3px 1px #ccc; }
+.tail-link a:hover{ background:#0f93d8; color: #fff;}
+
+
+/*选择科目页面*/
+.select-subjects-box{ padding:20px 0 0 0; width: 100%;}
+.select-subjects{ width:998px;background: #fff;border: 1px solid #dfdfdf; margin: auto; overflow: hidden;  }
+.select-subjects .tc-head{ background:#fff; overflow: hidden; height: 50px; padding:14px 30px 0 30px;}
+.select-subjects .tc-head h3{ color: #666;font-size:24px; line-height:50px; font-weight: 100; float: left;}
+.select-subjects .tc-head a{ background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -505px; width: 14px; height: 13px; display: block; float: right; padding:18px 0 0 22px;}
+.select-subjects .xian{ width:938px; height: 1px; background:#dfdfdf; margin: auto;}
+.xz-subject-bj{ overflow: hidden;}
+.selected-km-s .biti{ padding:16px 30px 10px 30px; overflow: hidden;}
+.selected-km-s .biti span{ display: block; float: left; background:url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -566px; font-size:18px; line-height:21px; padding-left: 33px; }
+.selected-km-s .biti a{ float: right; font-size: 16px; color: #999;background:url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat 0 -617px; line-height: 16px; padding-left: 20px;}
+.selected-km-s .yx-kmlb{ overflow: hidden; padding: 0 34px;}
+.selected-km-s .yx-kmlb li{ float: left; width: 178px; height: 30px; border: dashed 1px #dfdfdf; background: #f0f1f2;margin:3px;}
+.selected-km-s .yx-kmlb a{ display: block; text-align: center; line-height: 32px; font-size: 14px; color: #333;}
+.selected-km-s .yx-kmlb li:hover{border:solid 1px #0f93d8;background: #0f93d8;}
+.selected-km-s .yx-kmlb li:hover a{ color:#fff;}
+.xz-subject-bj{ padding-bottom:30px;}
+.xz-subject-bj .xuxian{ width:930px; height:1px;border-bottom:dashed 1px #dfdfdf; margin: 14px auto 20px auto;}
+.xz-subject-bj .tc-search{ overflow: hidden; width:930px; margin: auto; border: #dbdbdb solid 1px; border-radius: 20px;}
+.xz-subject-bj .tc-search .tc-cr{ border:solid 1px #fff;float: left; line-height: 28px; height: 28px;width:832px; padding-left: 10px; border-radius: 30px 0 0 30px;color: #999; display: block;}
+.xz-subject-bj .tc-search .tc-ss{border:solid 1px #f0f1f2;cursor: pointer;font-size: 14px;background-color: #f0f1f2; line-height: 30px; display: block;float:left;color: #999; width:86px; border-radius: 0 30px 30px 0; border-left: 1px solid #ececec;}
+.xz-subject-bj .tc-search:hover{border:solid 1px #0f93d8;}
+.xz-subject-bj .tc-search:hover .tc-ss{ background:#0f93d8; color: #fff;border:solid 1px #0f93d8;}
+.km-xz-bigbk{ width:938px; margin: auto;overflow: hidden; padding-top: 6px;}
+.km-xz-bigbk .biti{ border-bottom:solid 1px #dfdfdf; padding: 11px 0 10px 0; position: relative; margin-bottom: 5px;  }
+.km-xz-bigbk .biti span{ position: absolute; left: 0; background: url("../images/x-ioc.png")/*tpa=http://www.educity.cn/tiku/images/x-ioc.png*/ no-repeat #fff; height: 22px; line-height: 22px; padding-left:33px; padding-right: 10px; font-size: 18px;color:#333;}
+.km-xz-bigbk .biti span.rk-ioc{ background-position:0 -653px; }
+.km-xz-bigbk .biti span.tx-ioc{ background-position:0 -695px; }
+.km-xz-bigbk .biti span.pmp-ioc{ background-position:0 -737px; }
+.km-xz-bigbk dl{ padding:15px 0 0 0; overflow: hidden;}
+.km-xz-bigbk dl dt{  border-left: solid 4px #0f93d8; line-height: 18px; height: 18px; font-size: 16px; color:#0f93d8; padding-left: 10px; margin-bottom:5px;}
+.km-xz-bigbk dl dd{ margin:5px 0 0 0; background:url("../images/bj-09.png")/*tpa=http://www.educity.cn/tiku/images/bj-09.png*/ no-repeat center center; width:186px; height: 38px;float: left;}
+.km-xz-bigbk dd a{ padding: 1px 0 0 0; width: 182px; height:32px; text-align: center; line-height: 32px; display: block; color: #333; }
+.km-xz-bigbk dl dd:hover{ background: url("../images/bj-09-blue.png")/*tpa=http://www.educity.cn/tiku/images/bj-09-blue.png*/ no-repeat center center;}
+.km-xz-bigbk dd:hover a{ color:#fff;}
+
+/*没有记录*/
+.no-record{width:998px; height:480px; background: #fff;border: 1px solid #dfdfdf; margin: auto; overflow: hidden;}
+.no-record .tx-box{ width:123px; height: 110px; margin: auto; padding-top: 100px; }
+.no-record .tx-box img{ display: block;width:123px; height: 110px;}
+.no-record span{ display: block; text-align: center; padding-top: 40px;font-size: 16px; line-height: 24px; color: #999;}
+.no-record span a{ color: #0f93d8; font-size: 16px; line-height: 24px;}
+
+/*知识点*/
+.zsd-box{width:998px; height:480px; background: #fff;border: 1px solid #dfdfdf;border-top: none;margin: auto; overflow: hidden;}
+.zsd-box .box{ overflow: hidden; width:546px; margin: auto;padding:40px 0 0 0;}
+.zsd-box .line{font-size: 20px;margin:20px 10px;}
+.zsd-box span{ display: inline-block; line-height: 32px; color: #999; text-align: right; width:100px;}
+.zsd-box select{ width: 420px; height:47px;line-height:42px;position: 0; display: inline-block;border: 1px solid #dfdfdf;font-size: 16px;}
+.zsd-box select option{height:24px;}
+.zsd-box .kslx{display: block; width:420px;margin: auto;background:#0f93d8; border: solid 1px #0f93d8;line-height:52px; font-size: 16px;margin-left:107px; color: #fff;}
+.xlxx-box{ font-size: 18px; text-align: center; padding: 20px;color: #999;}
+.xlxx-box .green{ color:#0f93d8; font-size: 24px;}
+.liebiao-moban-box-one h2 b{ color: #008cd6; padding-right:10px; background:url("../images/tx-05.png")/*tpa=http://www.educity.cn/tiku/images/tx-05.png*/ no-repeat left center; display: inline-block;padding-left: 24px;}
+.liebiao-moban-box-one h2 i{ color: #999;}
+.liebiao-moban-box-one:hover h2 b{background:url("../images/tx-04.png")/*tpa=http://www.educity.cn/tiku/images/tx-04.png*/ no-repeat left center;}
+
+/*练习模式*/
+.toubu-mun{z-index: 99;}
+.adress{ background: #fff;  border: solid 1px #e0e3e9; width:998px;}
+.adress-one{ overflow: hidden;padding:0 30px; line-height:42px;}
+.adress-one h2{font-weight: 100; text-overflow: ellipsis;white-space: nowrap; overflow: hidden;}
+.adress-one h2 a{font-size: 16px; color:#151515; text-decoration:none;}
+.adress-one h2 b{ padding-right:6px;color: #008cd6;}
+.adress-one span{ display: block;}
+.adress-one span a{ color: #999999; background: url("../images/tx-06.png")/*tpa=http://www.educity.cn/tiku/images/tx-06.png*/ no-repeat left center; padding-left: 21px; text-decoration:none;}
+.adress-one span a:hover{ color: #0f93d8;background: url("../images/tx-06-blue.png")/*tpa=http://www.educity.cn/tiku/images/tx-06-blue.png*/ no-repeat left center;}
+.tpro-gress-pra{ background: #f9f9f9; border: solid 1px #e0e3e9; border-top: none;width:998px;}
+.tpro-gress{ overflow: hidden;padding:18px 30px;}
+.tpro-gress .progress{ background: #e2e3e4; width:800px; height: 16px;float:left;border-radius:8px; position: relative;overflow: hidden;}
+.tpro-gress .progress em{ display:inline-block; height: 16px;background: #ff0000;position: absolute;border-radius:8px; left: 0;}
+.tpro-gress .txt{ float: right;font-size: 16px;line-height: 16px;}
+.tpro-gress .txt em{ color:#ff0000;}
+.dopra-con{ margin:20px 0;position: relative;} 
+.cross-range{ width: 810px;}
+.subject-con {margin-bottom:15px;background: #fff;font-size: 14px;position: relative; border: solid 1px #e0e3e9;min-height:640px;}
+.sub-content .sub-dotitle{ background: #f9f9f9;text-align: justify; padding: 30px; border-bottom: solid 1px #e0e3e9; font-size: 16px; color: #151515;line-height: 26px;}
+.sub-content .sub-dotitle em{ font-family: Arial; color:#0f93d8; font-size: 20px;}
+.sub-content .sub-dotitle i{color:#0f93d8;}
+.sub-content .sub-answer{ padding: 30px;}
+.sub-content .sub-answer dd{ padding: 8px 0; line-height: 41px; font-size: 16px;color: #151515; cursor: pointer;}
+.sub-content .sub-answer span{ width: 41px; height: 41px; border-radius: 50%; display: inline-block; border: solid 1px #e6e6e6; line-height: 41px; text-align: center;font-family: Arial;  font-size: 20px; color: #151515;margin-right:20px;}
+.sub-content .sub-answer .error{ background: #ff0000; border: solid 1px #ff0000; color: #fff;}
+.sub-content .sub-answer .correct{ background: #0f93d8; border: solid 1px #0f93d8; color: #fff;}
+.answer-analysis{ padding-bottom:200px;display: none;}
+.answer-analysis .answer-box{ background: #f9f9f9;padding: 0 30px; border-top: dashed 1px #e0e3e9; border-bottom: solid 1px #e0e3e9;}
+.answer-analysis .answer-box span{ font-size: 16px; color: #333; display: inline-block; line-height: 56px;padding-right:40px;}
+.answer-analysis .answer-box b{font-family: Arial;  font-size: 24px; }
+.answer-analysis .reference-answer b{ color: #0f93d8;}
+.answer-analysis .my-answer b{ color: #ff0000;}
+.answer-analysis .wb-box{padding:0 30px;overflow: hidden;padding-top: 18px;}
+.answer-analysis .wb-box em{ font-size: 14px; color: #999999; display: block; float: left; width: 70px;}
+.answer-analysis .wb-box span{  font-size: 16px; color: #151515; line-height: 26px; float:left; width: 678px;}
+.answer-analysis .wb-box a{ display: block; float: left;  width: 122px; height: 42px; border-radius: 4px; background: #0f93d8; line-height: 42px; text-align: center; color: #fff; font-size: 14px;}
+
+.subbottom-con {width: 100%;height: 50px;position: fixed;bottom: 0;left: 0;z-index: 999;}
+.subbottom {width: 1000px; height: 50px; margin: 0 auto;}
+.subbottom ul {height: 50px;background: #fbfbfb;box-shadow: 0 -2px 5px #eee;border-top: #d3d4d5 solid 2px;margin-right: 278px; width: 810px;}
+.subbottom li {float: left;position: relative;}
+.subbottom li.pre { width: 30%;}
+.subbottom li.ckdan {width:40%;}
+.subbottom li.next {width: 30%;float: right;}
+.subbottom li a {width: 100%; height: 50px;line-height: 50px; display: block; text-align: center; font-size: 14px;text-decoration:none;}
+.subbottom li i{ width:16px;height:16px;display: block; background: url("../images/tx-07.png")/*tpa=http://www.educity.cn/tiku/images/tx-07.png*/ no-repeat center center;}
+.subbottom li.pre i { background-position:-113px -42px;  position: absolute;top: 17px;left:68px; transition: all .2s;-webkit-transition: all .2s; -moz-transition: all .2s;}
+.subbottom li.ckdan i { background-position:-52px 0; position: absolute;top: 17px; left:100px;transition: all .2s;-webkit-transition: all .2s; -moz-transition: all .2s;}
+.subbottom li.next i {background-position:-52px -83px; position: absolute;top: 17px; right:68px;transition: all .2s;-webkit-transition: all .2s; -moz-transition: all .2s;}
+.subbottom li a:hover { background: #f3f3f3;  color: #0f93d8; }
+.subbottom li.ckdan a:hover i {background-position:0 0;}
+.subbottom li.pre a:hover i {background-position:0 -42px; }
+.subbottom li.next a:hover i {background-position:0 -83px;}
+.right-con {width:169px; position:absolute;top:0;right:0;}
+.rightArea-answer{background: #fff;border: 1px solid #e0e3e9;}
+.rightArea-answer .hd {background-color: #f9f9f9;border: #f0f0f0 solid 1px;border-width: 1px 0;line-height: 50px;}
+.rightArea-answer .hd .title { font-size: 16px; padding-left: 15px;}
+.rightArea-answer .panel-item { padding: 20px 10px 0px 0; display: inline-block;}
+.rightArea-answer dt { border-left: 3px solid #0f93d8; padding-left: 15px; line-height: 14px;font-size: 100%;color: #666;}
+.rightArea-answer .panel-order {margin: 15px 0 0 15px;overflow: hidden;}
+.rightArea-answer .panel-order a {float: left; cursor: pointer; margin: 0 1px 5px 0; width: 20px;height: 20px; line-height: 22px; border: 1px solid #e6e8ec;border-radius: 2px; outline: none;text-align: center; font-size: 12px; font-family: 'Arial';}
+.panel-order-notice {padding: 20px 0 0 0;border-top: 1px dotted #dbdbbd;margin: 20px 15px 20px 15px;overflow: hidden;}
+.panel-order-notice span{ display: block; float: left; padding-bottom: 10px;margin-right: 10px;}
+.panel-order-notice em {display: inline-block;height: 18px;line-height: 18px;}
+.panel-order-notice i {margin-left: 5px; margin-right: 10px;width: 12px; height: 12px;display: inline-block;vertical-align: -1px; overflow: hidden;border-radius: 2px;}
+.error { background: #ff0000;border: 1px solid #ff0000;}
+.right {background: #0f93d8;border: 1px solid #0f93d8;}
+.panel-order-notice i.normal {border: 1px solid #b1b6bf;}
+.rightArea-answer .ft{ width:137px; margin:auto; padding-top: 20px;}
+.rightArea-answer .ft .btn{width: 137px; height: 50px;display: block;padding-bottom: 20px;}
+.rightArea-answer .ft a.btn__cleared{ background: #f9f9f9; border: solid 1px #e0e3e9;display: block;height: 48px; line-height: 48px; text-align: center; color: #666666; font-size: 16px; border-radius: 4px;text-decoration:none;}
+.rightArea-answer .ft a.btn__submit{ background: #0f93d8; border: solid 1px #0f93d8;display: block;height: 48px; line-height: 48px; text-align: center; color: #fff; font-size: 16px; border-radius: 4px;text-decoration:none;}
+.rightArea-answer .back-top {padding: 14px 0;text-align: center;color: #999;font-size: 14px;line-height: 18px;cursor: pointer;}
+.srdfg{position:absolute;  width: 1000px;height:1px; top: 0; left: 50%; margin-left:-500px;}
+.ab{ position: fixed;top:0;}
+.syfx{ font-size: 14px; float: right; line-height: 56px; color: #999;}
+
+/*对话框*/
+#fullbg{background: #000000 none repeat scroll 0 0;opacity:.5; display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%;}
+.tiku_dialog{background-color: #f7f7f7; border: 1px solid #888; display: 2one; height: 150px; left: 45%; margin: -100px 0 0 -100px; padding: 12px 20px; position: fixed !important; /* 浮动对话框 */ position: absolute; top: 50%; width: 300px; z-index: 99999; overflow-y: auto;}
+.tiku_dialog .close{width:44px; height:44px; position:absolute; top:0; right:0;}
+.tiku_dialogs{background-color: #f7f7f7; border: 1px solid #888; display: 2one; height: 150px; left: 45%; margin: -100px 0 0 -100px; padding: 12px 20px; position: fixed !important; /* 浮动对话框 */ position: absolute; top: 50%; width: 300px; z-index: 99999; overflow-y: auto;}
+.tiku_dialogs.close{width:44px; height:44px; position:absolute; top:0; right:0;}
+.title_h3{font-size:28px;font-weight:normal;color:#333333;margin:35px 0 8px 52px;}
+.title_h3 span{color:#999;font-size:13px;margin-left:14px;}
+.tiku_dialog, .tiku_dialogs{background: #f7f7f7 none repeat scroll 0 0; border: 1px solid #dedede; border-radius: 4px; color: #5a5a5a; height: 173px; padding: 0 32px; position: relative; width: 316px;}
+.tiku_dialog p.text, .tiku_dialogs p.text{font-size: 18px; height: 60px; line-height: 60px; margin-bottom: 5px; margin-top: 20px; text-align: center;}
+.tiku_dialog a.again, .tiku_dialog a.ok, .tiku_dialogs a.again, .tiku_dialogs a.ok{background: #0099ff none repeat scroll 0 0; border-radius: 3px; color: #ffffff; float: left; font-size: 16px; height: 40px; line-height: 40px; margin-left: 10px; margin-right: 10px; margin-top: 5px; text-align: center; width: 40%;}
+.tiku_dialog a.tk_close, .tiku_dialogs a.tk_close{background: rgba(0, 0, 0, 0) url("../images/tiku_box_close.png")/*tpa=http://www.educity.cn/tiku/images/tiku_box_close.png*/ no-repeat scroll 0 0; height: 22px; position: absolute; right: 10px; top: 8px; width: 22px;}

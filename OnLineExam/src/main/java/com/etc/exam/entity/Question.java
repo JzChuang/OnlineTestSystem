@@ -1,7 +1,7 @@
 package com.etc.exam.entity;
 
 public class Question {
-    private int QUESTIONID;
+    private int QUESTIONID;//ÌâÄ¿±àºÅ
 
     private int QTYPEID;
 
