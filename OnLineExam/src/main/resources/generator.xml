@@ -45,21 +45,7 @@
 		</javaClientGenerator>
 		<!-- 要生成那些表(更改tableName和domainObjectName就可以) -->
 		
-		<table tableName="T_STUDENTINFO" domainObjectName="Student"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false">
-			<!-- 设置驼峰命名 -->
-			<property name="useActualColumnNames" value="true"/>
-		</table>
-		<table tableName="T_QUESTIONTYPE" domainObjectName="QuestionType"
-			enableCountByExample="false" enableUpdateByExample="false"
-			enableDeleteByExample="false" enableSelectByExample="false"
-			selectByExampleQueryId="false">
-			<!-- 设置驼峰命名 -->
-			<property name="useActualColumnNames" value="true"/>
-		</table>
-		<table tableName="T_EXAMTYPE" domainObjectName="ExamType"
+		<table tableName="T_LOGIN" domainObjectName="Users"
 			enableCountByExample="false" enableUpdateByExample="false"
 			enableDeleteByExample="false" enableSelectByExample="false"
 			selectByExampleQueryId="false">
