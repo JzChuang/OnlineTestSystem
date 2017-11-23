@@ -31,12 +31,12 @@ public class TestDao {
 	
 	@Test
 	public void testUsersMapper() {
-//		String USERNAME="jzc";
-//		Users u =um.selectStuByName(USERNAME);
-//		System.out.println(u);
-		Users u = new Users(5, "17720837681", "123456", "学生");
-		int i = um.insert(u);
-		System.out.println(i);
+		String USERNAME="17720837681";
+		Users u =um.selectStuByName(USERNAME);
+		System.out.println(u);
+//		Users u = new Users(5, "17720837681", "123456", "学生");
+//		int i = um.insert(u);
+//		System.out.println(i);
 	}
 	
 }
