@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etc.exam.dao.UsersMapper">
+  <resultMap id="BaseResultMap" type="com.etc.exam.entity.Users">
+    <id column="USERID" jdbcType="DECIMAL" property="USERID" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="USERNAME" />
+    <result column="USERPWD" jdbcType="VARCHAR" property="USERPWD" />
+    <result column="USERTYPE" jdbcType="VARCHAR" property="USERTYPE" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    USERID, USERNAME, USERPWD, USERTYPE
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_LOGIN
+    where USERID = #{USERID,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from T_LOGIN
+    where USERID = #{USERID,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.etc.exam.entity.Users">
+    insert into T_LOGIN (USERID, USERNAME, USERPWD, 
+      USERTYPE)
+    values (#{USERID,jdbcType=DECIMAL}, #{USERNAME,jdbcType=VARCHAR}, #{USERPWD,jdbcType=VARCHAR}, 
+      #{USERTYPE,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.etc.exam.entity.Users">
+    insert into T_LOGIN
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="USERID != null">
+        USERID,
+      </if>
+      <if test="USERNAME != null">
+        USERNAME,
+      </if>
+      <if test="USERPWD != null">
+        USERPWD,
+      </if>
+      <if test="USERTYPE != null">
+        USERTYPE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="USERID != null">
+        #{USERID,jdbcType=DECIMAL},
+      </if>
+      <if test="USERNAME != null">
+        #{USERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="USERPWD != null">
+        #{USERPWD,jdbcType=VARCHAR},
+      </if>
+      <if test="USERTYPE != null">
+        #{USERTYPE,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.etc.exam.entity.Users">
+    update T_LOGIN
+    <set>
+      <if test="USERNAME != null">
+        USERNAME = #{USERNAME,jdbcType=VARCHAR},
+      </if>
+      <if test="USERPWD != null">
+        USERPWD = #{USERPWD,jdbcType=VARCHAR},
+      </if>
+      <if test="USERTYPE != null">
+        USERTYPE = #{USERTYPE,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where USERID = #{USERID,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.etc.exam.entity.Users">
+    update T_LOGIN
+    set USERNAME = #{USERNAME,jdbcType=VARCHAR},
+      USERPWD = #{USERPWD,jdbcType=VARCHAR},
+      USERTYPE = #{USERTYPE,jdbcType=VARCHAR}
+    where USERID = #{USERID,jdbcType=DECIMAL}
+  </update>
+  
+  <!-- 根据学生的用户名在login表中查找用户类型为学生的用户 -->
+  <select id="selectStuByName" resultMap="BaseResultMap">
+  	 select 
+    <include refid="Base_Column_List" />
+    from T_LOGIN
+    where USERNAME = #{USERNAME} and USERTYPE = '学生'
+  </select>
+</mapper>
