@@ -19,7 +19,7 @@ public class TestDao {
 	
 	@Test
 	public void testExamTypeMapper() {
-		ExamType et = new ExamType(7, "软件设计师");
+		ExamType et = new ExamType(15, "软件设计师");
 		int i=etm.insert(et);
 		System.out.println(i);
 		System.out.println("000");
