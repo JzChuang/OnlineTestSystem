@@ -17,7 +17,7 @@ public class IndustrySMS
 	private static String accountSid = Config.ACCOUNT_SID;
 	private static String to = "";
 	private static String smsContent = "【智囊网】您的验证码为{0,number,######}，请于2分钟内正确输入，如非本人操作，请忽略此短信。";
-	private static int yanZhengNum;//生成的随机验证码
+	public static int yanZhengNum;//生成的随机验证码
 	//private static String smsContent = "【智囊网】您的验证码为123456，请于2分钟内正确输入，如非本人操作，请忽略此短信。";
 	
 	/**
@@ -45,7 +45,7 @@ public class IndustrySMS
 		String url = Config.BASE_URL + operation;
 		String body = "accountSid=" + accountSid + "&to=" + phoneNum + "&smsContent=" + smsContent
 				+ HttpUtil.createCommonParam();
-
+		System.out.println("smsContent"+smsContent);
 		// 提交请求
 		String result = HttpUtil.post(url, body);
 		System.out.println("result:" + System.lineSeparator() + result);
