@@ -77,7 +77,7 @@
 		</div>
 		<span id="phonenamspan"></span>
 		<div class="inputdiv yanzhengma">
-				<input id="yanzhengma" type="password" name="" id="" value="" placeholder="请输入收到的验证码" style="width: 200px;"/>
+				<input id="yanzhengma" type="text" name="" id="" value="" placeholder="请输入收到的验证码" style="width: 200px;"/>
 				<button id="send" type="button" class="btn btn-info">发送验证码</button>
 		</div>
 		<span id="yanzhengmaspan"></span>
@@ -90,7 +90,7 @@
 		<label for="remember-me">阅读并同意网站协议</label>
 		<a >智囊网用户协议</a>
 		<br />
-		<input type="submit" class="btn btn-primary" style="width: 300px;" id="" name="" value="注册"/>	
+		<input type="submit" id="reg-user" class="btn btn-primary" style="width: 300px;" id="" name="" value="注册"/>	
 		
 	</div>
 	</center>
@@ -100,8 +100,35 @@ $(function(){
 	$("#phonenum").blur(function(){
 		$("#yanzhengmaspan").attr('class',"");
 		$("#yanzhengmaspan").html("");
+		var userName = $("#phonenum").val();
+		$.get("judgeStuIsExis",{"userName":userName},function (pd,satus){
+			if(pd[0]==1){
+				$("#phonenamspan").attr('class','glyphicon glyphicon-ok');
+				$("#phonenamspan").css('color','green');
+				$("#phonenamspan").html(pd.substring(1,16));
+			}
+			//检测到手机号已经被注册
+			else if(pd[0]==2){
+				$("#phonenamspan").attr('class','glyphicon glyphicon-remove');
+				$("#phonenamspan").css('color','red');
+				$("#phonenamspan").html("该手机号已经被注册，请<a id='tologin'>直接登录</a>");
+			}
+			else if(pd[0]==0){
+				$("#phonenamspan").attr('class','glyphicon glyphicon-remove');
+				$("#phonenamspan").css('color','red');
+				$("#phonenamspan").html(pd.substring(1,16));
+			}
+		});
 	})
 	
+	/* 检测到手机号已被注册，点击跳转到登录界面 */
+	
+	　$(document).on("click","#tologin",function(){
+			$(".login").css("display","block");
+			$(".reg").css("display","none");
+　　		});
+	
+
 	/*  
 	//点击发送验证码
 	*/
@@ -135,6 +162,28 @@ $(function(){
 			}
 		});
 	});
+	
+	//点击注册时提交用户手机号和密码
+	$("#reg-user").click(function(){
+		var phonenum = $("#phonenum").val();
+		var yanzhengma = $("#yanzhengma").val();
+		var password = $("#password1").val();
+		$.get("regUsers",{"phonenum":phonenum,"yanzhengma":yanzhengma,"password":password},function (pd,satus){
+			if(pd[0]==1){
+				$("#yanzhengmaspan").attr('class','glyphicon glyphicon-ok');
+				$("#yanzhengmaspan").css('color','green');
+				$("#yanzhengmaspan").html(pd.substring(1,16));
+			}
+			else{
+				$("#yanzhengmaspan").attr('class','glyphicon glyphicon-remove');
+				$("#yanzhengmaspan").css('color','red');
+				$("#yanzhengmaspan").html(pd.substring(1,16));
+			
+			}
+				
+		})	
+	})
+	
 });
 </script>
 </html>

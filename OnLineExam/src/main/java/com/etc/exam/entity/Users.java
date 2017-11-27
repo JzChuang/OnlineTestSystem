@@ -1,7 +1,7 @@
 package com.etc.exam.entity;
 
 public class Users {
-    private int USERID;
+    private long USERID;
 
     private String USERNAME;
 
@@ -9,11 +9,11 @@ public class Users {
 
     private String USERTYPE;
 
-    public int getUSERID() {
+    public long getUSERID() {
         return USERID;
     }
 
-    public void setUSERID(int USERID) {
+    public void setUSERID(long USERID) {
         this.USERID = USERID;
     }
 
@@ -47,7 +47,7 @@ public class Users {
 				+ "]";
 	}
 
-	public Users(int uSERID, String uSERNAME, String uSERPWD, String uSERTYPE) {
+	public Users(long uSERID, String uSERNAME, String uSERPWD, String uSERTYPE) {
 		super();
 		USERID = uSERID;
 		USERNAME = uSERNAME;

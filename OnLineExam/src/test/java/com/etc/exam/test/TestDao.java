@@ -11,6 +11,7 @@ import com.etc.exam.dao.ExamTypeMapper;
 import com.etc.exam.dao.UsersMapper;
 import com.etc.exam.entity.ExamType;
 import com.etc.exam.entity.Users;
+import com.etc.exam.util.IdGenerate;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 //@ContextConfiguration(locations= {"",""})
@@ -34,7 +35,7 @@ public class TestDao {
 //		String USERNAME="jzc";
 //		Users u =um.selectStuByName(USERNAME);
 //		System.out.println(u);
-		Users u = new Users(5, "17720837681", "123456", "学生");
+		Users u = new Users(IdGenerate.getId(), "17720837680", "123456", "学生");
 		int i = um.insert(u);
 		System.out.println(i);
 	}
