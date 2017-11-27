@@ -9,7 +9,7 @@
     <result column="PAPERFINISH" jdbcType="VARCHAR" property="PAPERFINISH" />
     <result column="CREATETIME" jdbcType="VARCHAR" property="CREATETIME" />
     <result column="CREATEMAN" jdbcType="VARCHAR" property="CREATEMAN" />
-    <result column="TIME" jdbcType="DECIMAL" property="TIME" />
+    <result column="TIME" jdbcType="VARCHAR" property="TIME" />
   </resultMap>
   <sql id="Base_Column_List">
     TESTPAPERID, EXAMTYPEID, TESTPAPERNAME, TESTPAPERTYPE, PAPERFINISH, CREATETIME, CREATEMAN, 

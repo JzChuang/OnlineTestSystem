@@ -87,7 +87,14 @@ public class Question {
         return TITLEIMG;
     }
 
-    public void setTITLEIMG(String TITLEIMG) {
+    @Override
+	public String toString() {
+		return "Question [QUESTIONID=" + QUESTIONID + ", QTYPEID=" + QTYPEID + ", SUBJECTID=" + SUBJECTID
+				+ ", QUESTIONTITLE=" + QUESTIONTITLE + ", ANSWER=" + ANSWER + ", EXPLAIN=" + EXPLAIN + ", QOPTION="
+				+ QOPTION + ", SCORE=" + SCORE + ", TITLEIMG=" + TITLEIMG + "]";
+	}
+
+	public void setTITLEIMG(String TITLEIMG) {
         this.TITLEIMG = TITLEIMG == null ? null : TITLEIMG.trim();
     }
 }
