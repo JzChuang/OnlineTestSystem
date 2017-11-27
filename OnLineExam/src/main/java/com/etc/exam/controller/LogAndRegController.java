@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.etc.exam.entity.Users;
 import com.etc.exam.miaodiapi.IndustrySMS;
 import com.etc.exam.service.UserService;
+import com.etc.exam.util.IdGenerate;
+import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion.User;
 
 
 @Controller
@@ -58,9 +60,11 @@ public class LogAndRegController {
 	}
 	@RequestMapping(value="regUsers",method=RequestMethod.GET,produces="text/html; charset=UTF-8")
 	@ResponseBody
-	public String regUsers(String phoneNum,String yanzhengma) {
+	public String regUsers(String phoneNum,String yanzhengma,String password) {
 		int yznum = Integer.parseInt(yanzhengma);
+		
 		if(yznum==IndustrySMS.yanZhengNum) {
+			Users u = new Users(IdGenerate.getId(), phoneNum, password, "学生");
 			return "1验证码正确";
 		}
 		else {
