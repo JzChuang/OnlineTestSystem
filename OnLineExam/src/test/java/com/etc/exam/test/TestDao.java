@@ -24,7 +24,7 @@ public class TestDao {
 	
 	@Test
 	public void testExamTypeMapper() {
-		ExamType et = new ExamType(7, "软件设计师");
+		ExamType et = new ExamType(15, "软件设计师");
 		int i=etm.insert(et);
 		System.out.println(i);
 		System.out.println("000");
@@ -35,9 +35,16 @@ public class TestDao {
 //		String USERNAME="jzc";
 //		Users u =um.selectStuByName(USERNAME);
 //		System.out.println(u);
-		Users u = new Users(IdGenerate.getId(), "17720837680", "123456", "学生");
-		int i = um.insert(u);
-		System.out.println(i);
+//		Users u = new Users(IdGenerate.getId(), "17720837680", "123456", "学生");
+//		int i = um.insert(u);
+//		System.out.println(i);
+
+		String USERNAME="17720837681";
+		Users u =um.selectStuByName(USERNAME);
+		System.out.println(u);
+//		Users u = new Users(5, "17720837681", "123456", "学生");
+//		int i = um.insert(u);
+//		System.out.println(i);
 	}
 	
 }
