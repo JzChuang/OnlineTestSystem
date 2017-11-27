@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etc.exam.dao.USERRECORDMapper">
+  <resultMap id="BaseResultMap" type="com.etc.exam.entity.USERRECORD">
+    <id column="RECORDID" jdbcType="DECIMAL" property="recordid" />
+    <result column="TESTPAPERID" jdbcType="DECIMAL" property="testpaperid" />
+    <result column="USERTIME" jdbcType="VARCHAR" property="usertime" />
+    <result column="TESTDATE" jdbcType="VARCHAR" property="testdate" />
+    <result column="GRADE" jdbcType="DECIMAL" property="grade" />
+    <result column="USERNAME" jdbcType="VARCHAR" property="username" />
+     <association  column="TESTPAPERID" property="testpaper" javaType="com.etc.exam.entity.TestPaper">
+    <id column="TESTPAPERID" jdbcType="DECIMAL" property="TESTPAPERID" />
+    <result column="EXAMTYPEID" jdbcType="DECIMAL" property="EXAMTYPEID" />
+    <result column="TESTPAPERNAME" jdbcType="VARCHAR" property="TESTPAPERNAME" />
+    <result column="TESTPAPERTYPE" jdbcType="VARCHAR" property="TESTPAPERTYPE" />
+    <result column="PAPERFINISH" jdbcType="VARCHAR" property="PAPERFINISH" />
+    <result column="CREATETIME" jdbcType="VARCHAR" property="CREATETIME" />
+    <result column="CREATEMAN" jdbcType="VARCHAR" property="CREATEMAN" />
+    <result column="TIME" jdbcType="VARCHAR" property="TIME" />
+  </association>
+  </resultMap>
+  <sql id="Base_Column_List">
+    RECORDID, TESTPAPERID, USERTIME, TESTDATE, GRADE, USERNAME
+  </sql>
+  <select id="selectByPrimaryKey"  resultMap="BaseResultMap">
+    select *
+    from T_USERRECORD,T_TESTPAPER
+    where T_USERRECORD.testpaperid=T_TESTPAPER.testpaperid and RECORDID=#{recordid,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Short">
+    delete from T_USERRECORD
+    where RECORDID = #{recordid,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="com.etc.exam.entity.USERRECORD">
+    insert into T_USERRECORD (RECORDID, TESTPAPERID, USERTIME, 
+      TESTDATE, GRADE, USERNAME
+      )
+    values (#{recordid,jdbcType=DECIMAL}, #{testpaperid,jdbcType=DECIMAL}, #{usertime,jdbcType=VARCHAR}, 
+      #{testdate,jdbcType=VARCHAR}, #{grade,jdbcType=DECIMAL}, #{username,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.etc.exam.entity.USERRECORD">
+    insert into T_USERRECORD
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="recordid != null">
+        RECORDID,
+      </if>
+      <if test="testpaperid != null">
+        TESTPAPERID,
+      </if>
+      <if test="usertime != null">
+        USERTIME,
+      </if>
+      <if test="testdate != null">
+        TESTDATE,
+      </if>
+      <if test="grade != null">
+        GRADE,
+      </if>
+      <if test="username != null">
+        USERNAME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="recordid != null">
+        #{recordid,jdbcType=DECIMAL},
+      </if>
+      <if test="testpaperid != null">
+        #{testpaperid,jdbcType=DECIMAL},
+      </if>
+      <if test="usertime != null">
+        #{usertime,jdbcType=VARCHAR},
+      </if>
+      <if test="testdate != null">
+        #{testdate,jdbcType=VARCHAR},
+      </if>
+      <if test="grade != null">
+        #{grade,jdbcType=DECIMAL},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.etc.exam.entity.USERRECORD">
+    update T_USERRECORD
+    <set>
+      <if test="grade != null">
+        GRADE = #{grade,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where  TESTPAPERID = #{testpaperid,jdbcType=DECIMAL} and  USERNAME = #{username,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.etc.exam.entity.USERRECORD">
+    update T_USERRECORD
+    set 
+      GRADE = #{grade,jdbcType=DECIMAL}
+    where RECORDID = #{recordid,jdbcType=DECIMAL}
+  </update>
+  <select id="selectall" parameterType="java.lang.Short" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from T_USERRECORD
+  </select>
+</mapper>

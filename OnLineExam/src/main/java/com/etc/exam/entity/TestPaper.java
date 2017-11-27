@@ -15,7 +15,7 @@ public class TestPaper {
 
     private String CREATEMAN;
 
-    private int TIME;
+    private String TIME;
 
     public int getTESTPAPERID() {
         return TESTPAPERID;
@@ -25,7 +25,24 @@ public class TestPaper {
         this.TESTPAPERID = TESTPAPERID;
     }
 
-    public int getEXAMTYPEID() {
+  
+
+	@Override
+	public String toString() {
+		return "TestPaper [TESTPAPERID=" + TESTPAPERID + ", EXAMTYPEID=" + EXAMTYPEID + ", TESTPAPERNAME="
+				+ TESTPAPERNAME + ", TESTPAPERTYPE=" + TESTPAPERTYPE + ", PAPERFINISH=" + PAPERFINISH + ", CREATETIME="
+				+ CREATETIME + ", CREATEMAN=" + CREATEMAN + ", TIME=" + TIME + "]";
+	}
+
+	public String getTIME() {
+		return TIME;
+	}
+
+	public void setTIME(String tIME) {
+		TIME = tIME;
+	}
+
+	public int getEXAMTYPEID() {
         return EXAMTYPEID;
     }
 
@@ -72,12 +89,8 @@ public class TestPaper {
     public void setCREATEMAN(String CREATEMAN) {
         this.CREATEMAN = CREATEMAN == null ? null : CREATEMAN.trim();
     }
+public TestPaper() {
+	// TODO Auto-generated constructor stub
+}
 
-    public int getTIME() {
-        return TIME;
-    }
-
-    public void setTIME(int TIME) {
-        this.TIME = TIME;
-    }
 }

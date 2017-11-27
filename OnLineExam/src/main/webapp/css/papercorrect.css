@@ -1,0 +1,45 @@
+.ty
+{
+	width:900px;
+	height:350px;
+	background-color:white;
+	box-shadow: 10px 10px 5px #888888;
+float: left;
+	
+	
+}
+
+#getscode{
+	width: 150px;
+	margin-left: 650px;
+	padding-top: 40px;
+	padding-left: 25px;
+	padding-bottom: 0px;
+	
+	
+
+}
+#xt
+{
+padding-left: 710px;
+	padding-bottom: -20px;
+	padding-top: 50px;
+	
+}
+
+
+.content{
+	width: 800px;
+	height: auto;
+	border: 0px solid;
+
+}
+
+.anser{
+width: 360px;
+height: auto;
+float: left;
+	
+	display: none;
+padding-top: 120px;
+}
